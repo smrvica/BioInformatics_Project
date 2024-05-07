@@ -7,17 +7,16 @@
 #include "../utils/hashFunctions.h"
 #include "bucket.h"
 
-
+template<size_t fp_size>
 class CuckooFilter {
 private:
     int capacity;
-    int fingerprint_size;
     int bucket_size;
     Bucket **buckets;
     int maxNoOfMoves;
 
 public:
-    CuckooFilter(int capacity, int fingerprint_size, int bucket_size, int maxNoOfMoves);
+    CuckooFilter(int capacity, int bucket_size, int maxNoOfMoves);
     ~CuckooFilter();
     bool insert(const char* key);
     bool lookup(const char* key);

@@ -1,21 +1,25 @@
-#ifndef BUCKET_H
-#define BUCKET_H
 
-
+template<size_t fp_size>
 class Bucket {
 private:
     int bucket_size;
-    int *fingerprints;
+    fp_size *fingerprints;
 
 public:
     Bucket(int bucket_size);
+
     ~Bucket();
-    bool insert(string fingerprint);  // TODO no idea what the type of the fingerprint is
-    bool lookup(string fingerprint);
-    bool deleteKey(string fingerprint);
+
+    bool insert(fp_size fingerprint);
+
+    bool lookup(fp_size fingerprint);
+
+    bool deleteKey(fp_size fingerprint);
+
     bool hasEmptyEntry();
-    string getFingerprint(int index);
+
+    int getBucketSize();
+
+    fp_size getFingerprint(int index);
 };
 
-
-#endif //BUCKET_H

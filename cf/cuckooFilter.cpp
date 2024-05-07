@@ -1,18 +1,23 @@
 #include "cuckooFilter.h"
 
-
+template<size_t fp_size>
 CuckooFilter::CuckooFilter(int capacity, int fingerprint_size, int bucket_size, int maxNoOfMoves) {
     this->capacity = capacity;
     this->fingerprint_size = fingerprint_size;
     this->bucket_size = bucket_size;
-    this->buckets = new Bucket[capacity];  // TODO idk what to initialize
+    this->buckets = new Bucket*[capacity];
+    for (int i = 0; i < capacity; i++) {
+        this->buckets[i] = new Bucket(bucket_size);
+    }
     this->maxNoOfMoves = maxNoOfMoves;
 }
 
+template<size_t fp_size>
 CuckooFilter::~CuckooFilter() {
     delete[] buckets;
 }
 
+template<size_t fp_size>
 bool CuckooFilter::insert(const char* key) {
     string fp = fingerprint(key);
     i1 = hash(key);
@@ -40,6 +45,7 @@ bool CuckooFilter::insert(const char* key) {
     return false;
 }
 
+template<size_t fp_size>
 bool CuckooFilter::lookup(const char* key) {
     string fp = fingerprint(key);
     i1 = hash(key);
@@ -50,6 +56,7 @@ bool CuckooFilter::lookup(const char* key) {
     return false;
 }
 
+template<size_t fp_size>
 bool CuckooFilter::deleteKey(const char* key) {
     string fp = fingerprint(key);
     i1 = hash(key);
