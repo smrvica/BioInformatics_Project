@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <string>
-#include "hashFunctions.h"
+#include "../utils/hashFunctions.h"
 #include "bucket.h"
 
 
@@ -13,8 +13,8 @@ private:
     int capacity;
     int fingerprint_size;
     int bucket_size;
-    int maxNoOfMoves;
     Bucket **buckets;
+    int maxNoOfMoves;
 
 public:
     CuckooFilter(int capacity, int fingerprint_size, int bucket_size, int maxNoOfMoves);
@@ -22,6 +22,7 @@ public:
     bool insert(const char* key);
     bool lookup(const char* key);
     bool deleteKey(const char* key);
+    void print();
 };
 
 
