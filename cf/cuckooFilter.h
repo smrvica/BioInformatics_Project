@@ -1,7 +1,4 @@
 
-#ifndef CUCKOOFILTER_H
-#define CUCKOOFILTER_H
-
 #include <iostream>
 #include <string>
 #include "../utils/hashFunctions.h"
@@ -14,6 +11,7 @@ private:
     int bucket_size;
     Bucket **buckets;
     int maxNoOfMoves;
+    uint32_t fp_mask;
 
 public:
     CuckooFilter(int capacity, int bucket_size, int maxNoOfMoves);
@@ -22,7 +20,6 @@ public:
     bool lookup(const char* key);
     bool deleteKey(const char* key);
     void print();
+    uint32_t fingerprint(const char* key);
 };
 
-
-#endif //CUCKOOFILTER_H
