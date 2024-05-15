@@ -62,9 +62,10 @@ bool CuckooFilter<fp_size>::insert(const char* key) {
     for (int n = 0; n < maxNoOfMoves; n++) {
         int e = rand() % bucket_size;
         fp_size temp = buckets[i].getFingerprint(e);
+        buckets[i].deleteKey(temp);
         buckets[i].insert(fp);
         fp = temp;
-        i = i ^ hash(fp);
+        i = i ^ hash(fp) % capacity;
         if (buckets[i].hasEmptyEntry()) {
             buckets[i].insert(fp);
             return true;

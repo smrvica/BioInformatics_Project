@@ -5,7 +5,8 @@
 typedef uint16_t fp_type;
 static const int bits_per_fp = 16;
 
-int main() {
+void test1() {
+    std::cout << "TEST 1\n";
 
     CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(5, 2, 6, bits_per_fp);
 
@@ -29,6 +30,29 @@ int main() {
 
     std::cout << "\n";
     cf.print();
+}
+
+
+void test2() {
+    std::cout << "TEST 2\n";
+
+    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(5, 2, 6, bits_per_fp);
+
+    for(int i = 0; i < 12; i++) {
+        std::string key = "test" + std::to_string(i);
+        std::cout << "insert " << key << ": " << cf.insert(key.c_str()) << "\n";
+    }
+
+    std::cout << "\n";
+    cf.print();
+}
+
+
+int main() {
+
+    test1();
+    std::cout << "\n\n";
+    test2();
 
     return 0;
 }
