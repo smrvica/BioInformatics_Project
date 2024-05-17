@@ -8,16 +8,13 @@
 #include <stdint.h>
 #include <initializer_list>
 
+// g++ -std=c++11 test1.cpp -o test1
+
 #include "cf/cuckooFilter.h"
+// #include "src/cuckoofilter.h"
 
 typedef uint16_t fp_type;
 static const int bits_per_fp = 16;
-
-std::string generateRandomSubsequence(const std::string &genome, int k)
-{
-    int start = rand() % (genome.size() - k + 1);
-    return genome.substr(start, k);
-}
 
 void performTest(int k, const std::string &genome)
 {
@@ -26,7 +23,7 @@ void performTest(int k, const std::string &genome)
     auto startInsertion = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
     {
-        std::string randomSubsequence = generateRandomSubsequence(genome, k);
+        std::string randomSubsequence = genome.substr(i * k, k);
         cf.insert(randomSubsequence.c_str());
     }
     auto endInsertion = std::chrono::high_resolution_clock::now();
@@ -35,8 +32,12 @@ void performTest(int k, const std::string &genome)
     auto startQuery = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
     {
-        std::string randomSubsequence = generateRandomSubsequence(genome, k);
-        cf.lookup(randomSubsequence.c_str());
+        std::string randomSubsequence = genome.substr(i * k, k);
+        int result = cf.lookup(randomSubsequence.c_str());
+        if (i < 3)
+        {
+            std::cout << "Look up for: " << randomSubsequence << ", Result: " << result << "\n";
+        }
     }
     auto endQuery = std::chrono::high_resolution_clock::now();
     auto queryTime = std::chrono::duration_cast<std::chrono::microseconds>(endQuery - startQuery).count();
@@ -45,7 +46,19 @@ void performTest(int k, const std::string &genome)
     getrusage(RUSAGE_SELF, &usage);
     long memoryUsage = usage.ru_maxrss / 1028;
 
-    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << ", Memory Usage: " << memoryUsage << " MB" << std::endl;
+    auto startFalseLookUp = std::chrono::high_resolution_clock::now();
+    std::string false_lookup1(k, 'A');
+    std::cout << "Look up for: " << false_lookup1 << ", Result: " << cf.lookup(false_lookup1.c_str()) << "\n";
+    std::string false_lookup2(k, 'G');
+    std::cout << "Look up for: " << false_lookup2 << ", Result: " << cf.lookup(false_lookup2.c_str()) << "\n";
+    std::string false_lookup3(k, 'C');
+    std::cout << "Look up for: " << false_lookup3 << ", Result: " << cf.lookup(false_lookup3.c_str()) << "\n";
+    std::string false_lookup4(k, 'T');
+    std::cout << "Look up for: " << false_lookup4 << ", Result: " << cf.lookup(false_lookup4.c_str()) << "\n";
+    auto endFalseLookUp = std::chrono::high_resolution_clock::now();
+    auto falseLookUpTime = std::chrono::duration_cast<std::chrono::microseconds>(endFalseLookUp - startFalseLookUp).count();
+
+    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Memory Usage: " << memoryUsage << " MB" << std::endl;
 }
 
 int main()
