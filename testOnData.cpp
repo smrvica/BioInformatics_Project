@@ -76,9 +76,32 @@ int main()
 
     srand(time(NULL));
 
+    std::cout << "\n\n===============================\n"
+              << "SIMULATING ON REAL E. COLI GENOME\n"
+              << "===============================\n";
     for (int k : {10, 20, 50, 100, 200})
     {
         std::cout << "Starting... k = " << k << "\n";
+        performTest(k, genome);
+    }
+
+    std::ifstream simulatedData("simulatedData.fna");
+    genome = "";
+    while (std::getline(simulatedData, line))
+    {
+        if (line[0] != '>')
+        {
+            genome += line;
+        }
+    }
+    simulatedData.close();
+
+    std::cout << "===============================\n"
+              << "SIMULATING ON RANDOMLY GENERATED GENOME\n"
+              << "===============================\n";
+    for (int k : {10, 20, 50, 100, 200})
+    {
+        std::cout << "\n\nStarting... k = " << k << "\n";
         performTest(k, genome);
     }
 
