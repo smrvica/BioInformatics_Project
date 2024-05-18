@@ -23,18 +23,45 @@ public:
     CuckooFilter<fp_size> *prev;
 
     CuckooFilter(int capacity, int bucket_size, int maxNoOfMoves, int bits_per_fp);
+
     ~CuckooFilter();
-    bool insert(const char* key, Victim &victim);
-    bool lookup(const char* key);
-    bool deleteKey(const char* key);
+
+    bool insert(const char *key, Victim &victim);
+
+    bool insertFP(fp_size fp, uint64_t index, Victim &victim);
+
+    bool lookup(const char *key);
+
+    bool deleteKey(const char *key);
 
     void print();
-    uint32_t fingerprint(const char* key);
 
-    bool isFull();
-    bool isEmpty();
+    uint32_t fingerprint(const char *key);
+
+    bool isFull() {
+        return ctr == capacity * bucket_size;
+    }
+
+    bool isEmpty() {
+        return ctr == 0;
+    }
+
+    int getCapacity() {
+        return capacity;
+    }
+
+    int getBucketSize() {
+        return bucket_size;
+    }
+
+    int getBitsPerFp() {
+        return bits_per_fp;
+    }
+
+    int getMaxNoOfMoves() {
+        return maxNoOfMoves;
+    }
 };
-
 
 
 template<typename fp_size>
@@ -59,9 +86,16 @@ CuckooFilter<fp_size>::~CuckooFilter() {
 }
 
 template<typename fp_size>
-bool CuckooFilter<fp_size>::insert(const char* key, Victim &victim) {
+bool CuckooFilter<fp_size>::insert(const char *key, Victim &victim) {
     fp_size fp = fingerprint(key);
-    uint64_t i1 = hash(key) % capacity;
+    uint64_t index = hash(key);
+    return insertFP(fp, index, victim);
+}
+
+
+template<typename fp_size>
+bool CuckooFilter<fp_size>::insertFP(fp_size fp, uint64_t index, Victim &victim) {
+    uint64_t i1 = index % capacity;
     uint64_t i2 = (i1 ^ hash(fp)) % capacity;
 
     if (buckets[i1].hasEmptyEntry()) {
@@ -73,14 +107,14 @@ bool CuckooFilter<fp_size>::insert(const char* key, Victim &victim) {
         ctr += 1;
         return true;
     }
-    uint64_t i = rand() % 2 == 0 ? i1 : i2;
+    uint64_t i = (rand() % 2 == 0) ? i1 : i2;
     for (int n = 0; n < maxNoOfMoves; n++) {
         int e = rand() % bucket_size;
         fp_size temp = buckets[i].getFingerprint(e);
         buckets[i].deleteKey(temp);
         buckets[i].insert(fp);
         fp = temp;
-        i = i ^ hash(fp) % capacity;
+        i = (i ^ hash(fp)) % capacity;
         if (buckets[i].hasEmptyEntry()) {
             buckets[i].insert(fp);
             ctr += 1;
@@ -92,8 +126,9 @@ bool CuckooFilter<fp_size>::insert(const char* key, Victim &victim) {
     return false;
 }
 
+
 template<typename fp_size>
-bool CuckooFilter<fp_size>::lookup(const char* key) {
+bool CuckooFilter<fp_size>::lookup(const char *key) {
     fp_size fp = fingerprint(key);
     uint64_t i1 = hash(key) % capacity;
     uint64_t i2 = (i1 ^ hash(fp)) % capacity;
@@ -104,7 +139,7 @@ bool CuckooFilter<fp_size>::lookup(const char* key) {
 }
 
 template<typename fp_size>
-bool CuckooFilter<fp_size>::deleteKey(const char* key) {
+bool CuckooFilter<fp_size>::deleteKey(const char *key) {
     fp_size fp = fingerprint(key);
     uint64_t i1 = hash(key) % capacity;
     uint64_t i2 = (i1 ^ hash(fp)) % capacity;
@@ -127,21 +162,11 @@ void CuckooFilter<fp_size>::print() {
 }
 
 template<typename fp_size>
-uint32_t CuckooFilter<fp_size>::fingerprint(const char* key) {
+uint32_t CuckooFilter<fp_size>::fingerprint(const char *key) {
     uint32_t hashValue = hash(key);
     uint32_t fingerprint = hashValue & fp_mask;
     if (fingerprint == 0) {
         fingerprint = 1;
     }
     return fingerprint;
-}
-
-template<typename fp_size>
-bool CuckooFilter<fp_size>::isFull() {
-    return ctr == capacity * bucket_size;
-}
-
-template<typename fp_size>
-bool CuckooFilter<fp_size>::isEmpty() {
-    return ctr == 0;
 }
