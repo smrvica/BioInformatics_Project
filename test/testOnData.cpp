@@ -10,7 +10,7 @@
 
 // g++ -std=c++11 test1.cpp -o test1
 
-#include "cf/cuckooFilter.h"
+#include "../cf/cuckooFilter.h"
 // #include "src/cuckoofilter.h"
 
 typedef uint16_t fp_type;

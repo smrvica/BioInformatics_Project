@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include "cf/cuckooFilter.h"
+#include "../cf/cuckooFilter.h"
 
 
 typedef uint16_t fp_type;

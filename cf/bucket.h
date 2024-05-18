@@ -1,4 +1,11 @@
 
+
+typedef struct Victim {
+    size_t index;
+    uint64_t fingerprint;
+} Victim;
+
+
 template<typename fp_size>
 class Bucket {
 private:

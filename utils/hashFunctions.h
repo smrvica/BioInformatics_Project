@@ -1,12 +1,6 @@
 
 #include <string>
 
-/*
-const uint64_t hash(uint32_t key);
-
-const uint64_t hash(std::string key);
-*/
-
 uint64_t hash(uint32_t key) {
     return std::hash < uint32_t > {}(key);
 }
