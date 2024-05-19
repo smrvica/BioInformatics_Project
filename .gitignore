@@ -13,3 +13,4 @@ src/compactedLDCF.h
 src/compactedLDCF.cpp
 src/bithack.h
 .vscode/settings.json
+testOnData

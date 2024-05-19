@@ -8,10 +8,10 @@
 #include <stdint.h>
 #include <initializer_list>
 
-// g++ -std=c++11 test1.cpp -o test1
+// g++ -std=c++11 test/testOnData.cpp -o testOnData
 
-#include "../cf/cuckooFilter.h"
-// #include "src/cuckoofilter.h"
+// #include "../cf/cuckooFilter.h"
+#include "../src/cuckoofilter.h"
 
 typedef uint16_t fp_type;
 static const int bits_per_fp = 16;
@@ -19,13 +19,15 @@ static const int bits_per_fp = 16;
 void performTest(int k, const std::string &genome)
 {
     CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(1000, 100, 10, bits_per_fp);
+    Victim victim;
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
-        cf.insert(randomSubsequence.c_str());
+        cf.insert(randomSubsequence.c_str(), victim);
     }
+    std::cout << "TU SAM\n";
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
 
@@ -63,7 +65,7 @@ void performTest(int k, const std::string &genome)
 
 int main()
 {
-    std::ifstream eColiGenome("e_coli_genome.fna");
+    std::ifstream eColiGenome("data/e_coli_genome.fna");
     std::string line, genome;
     while (std::getline(eColiGenome, line))
     {
@@ -85,7 +87,7 @@ int main()
         performTest(k, genome);
     }
 
-    std::ifstream simulatedData("simulatedData.fna");
+    std::ifstream simulatedData("data/simulatedData.fna");
     genome = "";
     while (std::getline(simulatedData, line))
     {
