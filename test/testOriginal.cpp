@@ -1,3 +1,5 @@
+// g++ -std=c++11 -I/opt/homebrew/opt/openssl@3/include -L/opt/homebrew/opt/openssl@3/lib -lssl -lcrypto -arch arm64 test/testOriginal.cpp originalImplementation/CuckooFilter.cpp -o testOriginal
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,23 +10,20 @@
 #include <stdint.h>
 #include <initializer_list>
 
-// g++ -std=c++11 test/testOnData.cpp -o testOnData
-
-#include "../cf/dynamicCuckooFilter.h"
-
-typedef uint16_t fp_type;
-static const int bits_per_fp = 16;
+#include "../originalImplementation/LDCF.h"
 
 void performTest(int k, const std::string &genome)
 {
-    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(1000, 100, 10, bits_per_fp);
+    size_t bits_per_fp = 16;
+
+    CuckooFilter cf(1000, bits_per_fp, 100, 10);
     Victim victim;
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
-        cf.insert(randomSubsequence.c_str(), victim);
+        cf.insertItem(randomSubsequence.c_str(), victim);
     }
     std::cout << "TU SAM\n";
     auto endInsertion = std::chrono::high_resolution_clock::now();
@@ -34,7 +33,7 @@ void performTest(int k, const std::string &genome)
     for (int i = 0; i < 1000; ++i)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
-        int result = cf.lookup(randomSubsequence.c_str());
+        int result = cf.queryItem(randomSubsequence.c_str());
         if (i < 3)
         {
             std::cout << "Look up for: " << randomSubsequence << ", Result: " << result << "\n";
@@ -49,13 +48,13 @@ void performTest(int k, const std::string &genome)
 
     auto startFalseLookUp = std::chrono::high_resolution_clock::now();
     std::string false_lookup1(k, 'A');
-    std::cout << "Look up for: " << false_lookup1 << ", Result: " << cf.lookup(false_lookup1.c_str()) << "\n";
+    std::cout << "Look up for: " << false_lookup1 << ", Result: " << cf.queryItem(false_lookup1.c_str()) << "\n";
     std::string false_lookup2(k, 'G');
-    std::cout << "Look up for: " << false_lookup2 << ", Result: " << cf.lookup(false_lookup2.c_str()) << "\n";
+    std::cout << "Look up for: " << false_lookup2 << ", Result: " << cf.queryItem(false_lookup2.c_str()) << "\n";
     std::string false_lookup3(k, 'C');
-    std::cout << "Look up for: " << false_lookup3 << ", Result: " << cf.lookup(false_lookup3.c_str()) << "\n";
+    std::cout << "Look up for: " << false_lookup3 << ", Result: " << cf.queryItem(false_lookup3.c_str()) << "\n";
     std::string false_lookup4(k, 'T');
-    std::cout << "Look up for: " << false_lookup4 << ", Result: " << cf.lookup(false_lookup4.c_str()) << "\n";
+    std::cout << "Look up for: " << false_lookup4 << ", Result: " << cf.queryItem(false_lookup4.c_str()) << "\n";
     auto endFalseLookUp = std::chrono::high_resolution_clock::now();
     auto falseLookUpTime = std::chrono::duration_cast<std::chrono::microseconds>(endFalseLookUp - startFalseLookUp).count();
 
