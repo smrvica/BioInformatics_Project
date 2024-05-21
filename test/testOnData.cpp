@@ -17,7 +17,7 @@ static const int bits_per_fp = 16;
 
 void performTest(int k, const std::string &genome)
 {
-    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(1000, 100, 10, bits_per_fp);
+    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(50, 20, 10, bits_per_fp);
     Victim victim;
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
@@ -26,15 +26,19 @@ void performTest(int k, const std::string &genome)
         std::string randomSubsequence = genome.substr(i * k, k);
         cf.insert(randomSubsequence.c_str(), victim);
     }
-    std::cout << "TU SAM\n";
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
 
     auto startQuery = std::chrono::high_resolution_clock::now();
+    int sum = 0;
     for (int i = 0; i < 1000; ++i)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
         int result = cf.lookup(randomSubsequence.c_str());
+        if (result)
+        {
+            sum++;
+        }
         if (i < 3)
         {
             std::cout << "Look up for: " << randomSubsequence << ", Result: " << result << "\n";
@@ -42,6 +46,7 @@ void performTest(int k, const std::string &genome)
     }
     auto endQuery = std::chrono::high_resolution_clock::now();
     auto queryTime = std::chrono::duration_cast<std::chrono::microseconds>(endQuery - startQuery).count();
+    std::cout << "CALCULATE: " << sum / 1000.0 * 100 << "%\n";
 
     struct rusage usage;
     getrusage(RUSAGE_SELF, &usage);
