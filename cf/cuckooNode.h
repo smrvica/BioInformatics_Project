@@ -18,6 +18,7 @@ struct CuckooNode
 
     CuckooNode<fp_size> *getNewLeftCF();
     CuckooNode<fp_size> *getNewRightCF();
+    void print();
 };
 
 template <typename fp_size>
@@ -45,4 +46,12 @@ CuckooNode<fp_size> *CuckooNode<fp_size>::getNewLeftCF()
     left = newNode;
 
     return newNode;
+}
+
+template <typename fp_size>
+void CuckooNode<fp_size>::print()
+{
+    curr->print();
+    left->print();
+    right->print();
 }

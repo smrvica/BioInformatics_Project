@@ -173,4 +173,6 @@ inline bool LCDF<fp_size>::deleteKey(const char *key)
 template <typename fp_size>
 inline void LCDF<fp_size>::print()
 {
+    std::cout << "LCDF\n";
+    root->print();
 }
