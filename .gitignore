@@ -15,3 +15,5 @@ src/bithack.h
 .vscode/settings.json
 testOnData
 /originalImplementation
+test_output
+test_outputž

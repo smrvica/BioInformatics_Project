@@ -17,15 +17,16 @@ static const int bits_per_fp = 16;
 
 void performTest(int k, const std::string &genome)
 {
-    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(50, 20, 10, bits_per_fp);
+    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(50, 25, 10, bits_per_fp);
     Victim victim;
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
-        cf.insert(randomSubsequence.c_str(), victim);
+        std::cout << cf.insert(randomSubsequence.c_str(), victim);
     }
+    std::cout << "\n";
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
 
@@ -35,15 +36,13 @@ void performTest(int k, const std::string &genome)
     {
         std::string randomSubsequence = genome.substr(i * k, k);
         int result = cf.lookup(randomSubsequence.c_str());
+        std::cout << result;
         if (result)
         {
             sum++;
         }
-        if (i < 3)
-        {
-            std::cout << "Look up for: " << randomSubsequence << ", Result: " << result << "\n";
-        }
     }
+    std::cout << "\n";
     auto endQuery = std::chrono::high_resolution_clock::now();
     auto queryTime = std::chrono::duration_cast<std::chrono::microseconds>(endQuery - startQuery).count();
     std::cout << "CALCULATE: " << sum / 1000.0 * 100 << "%\n";
