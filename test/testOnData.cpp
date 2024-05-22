@@ -10,14 +10,14 @@
 
 // g++ -std=c++11 test/testOnData.cpp -o testOnData
 
-#include "../cf/dynamicCuckooFilter.h"
+#include "../cf/LCDF.h"
 
 typedef uint16_t fp_type;
 static const int bits_per_fp = 16;
 
 void performTest(int k, const std::string &genome)
 {
-    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(50, 25, 10, bits_per_fp);
+    CuckooFilter<fp_type> cf = CuckooFilter<fp_type>(55, 20, 5, bits_per_fp);
     Victim victim;
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
@@ -81,7 +81,7 @@ int main()
 
     srand(time(NULL));
 
-    std::cout << "\n\n===============================\n"
+    std::cout << "\n\n\n===============================\n"
               << "SIMULATING ON REAL E. COLI GENOME\n"
               << "===============================\n";
     for (int k : {10, 20, 50, 100, 200})

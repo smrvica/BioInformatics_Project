@@ -25,6 +25,42 @@ public:
 };
 
 template <typename fp_size>
+inline void LCDF<fp_size>::storeVictim(Victim &victim)
+{
+    std::cout << "STORING VICTIM\n";
+    CuckooNode<fp_size> *curr = root;
+    bool bit = 0;
+    int depth = 0;
+    while (!curr->curr->insertFP(victim.fingerprint, victim.index, victim) && depth < bitsPerFp)
+    {
+        bool bit = (victim.fingerprint >> (bitsPerFp - 1 - depth)) & 0x1;
+        if (bit)
+        {
+            if (!curr->right)
+            {
+                curr = curr->getNewRightCF();
+            }
+            else
+            {
+                curr = curr->right;
+            }
+        }
+        else
+        {
+            if (!curr->left)
+            {
+                curr = curr->getNewLeftCF();
+            }
+            else
+            {
+                curr = curr->left;
+            }
+        }
+        depth++;
+    }
+}
+
+template <typename fp_size>
 inline LCDF<fp_size>::LCDF(int singleTableCapacity, int bucketSize, int maxNoOfMoves, int bitsPerFp)
 {
     this->singleTableCapacity = singleTableCapacity;
@@ -47,7 +83,7 @@ inline bool LCDF<fp_size>::insert(const char *key, Victim &victim)
     CuckooNode<fp_size> *curr = root;
     bool bit = 0;
     int depth = 0;
-    while (curr->curr->isFull() && depth < bitsPerFp)
+    while (!curr->curr->insert(key, victim) && depth < bitsPerFp)
     {
         bool bit = (curr->curr->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
         if (bit)
@@ -74,12 +110,13 @@ inline bool LCDF<fp_size>::insert(const char *key, Victim &victim)
         }
         depth++;
     }
-    if (!curr->curr->isFull())
+    if (!depth < bitsPerFp)
     {
-        bool success = curr->curr->insert(key, victim);
-        return success;
+        std::cout << "HA?\n";
+        return false;
     }
-    return false;
+    storeVictim(victim);
+    return true;
 }
 
 template <typename fp_size>
