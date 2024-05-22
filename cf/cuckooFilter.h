@@ -1,3 +1,5 @@
+#ifndef CUCKOOFILTER_H
+#define CUCKOOFILTER_H
 
 #include <iostream>
 #include <string>
@@ -66,10 +68,14 @@ public:
 
 template<typename fp_size>
 CuckooFilter<fp_size>::CuckooFilter(int capacity, int bucket_size, int maxNoOfMoves, int bits_per_fp) {
-    this->capacity = capacity;
+    int findCapacity = 1;
+    while (findCapacity <= capacity / 2) {
+        findCapacity *= 2;
+    }
+    this->capacity = findCapacity;
     this->bucket_size = bucket_size;
-    this->buckets = new Bucket<fp_size>[capacity];
-    for (int i = 0; i < capacity; i++) {
+    this->buckets = new Bucket<fp_size>[findCapacity];
+    for (int i = 0; i < findCapacity; i++) {
         this->buckets[i].setBucket(bucket_size, bits_per_fp);
     }
     this->maxNoOfMoves = maxNoOfMoves;
@@ -95,8 +101,8 @@ bool CuckooFilter<fp_size>::insert(const char *key, Victim &victim) {
 
 template<typename fp_size>
 bool CuckooFilter<fp_size>::insertFP(fp_size fp, uint64_t index, Victim &victim) {
-    uint64_t i1 = index % capacity;
-    uint64_t i2 = (i1 ^ hash(fp)) % capacity;
+    uint64_t i1 = index & (capacity - 1);
+    uint64_t i2 = (i1 ^ hash(fp)) & (capacity - 1);
 
     if (buckets[i1].hasEmptyEntry()) {
         buckets[i1].insert(fp);
@@ -114,13 +120,14 @@ bool CuckooFilter<fp_size>::insertFP(fp_size fp, uint64_t index, Victim &victim)
         buckets[i].deleteKey(temp);
         buckets[i].insert(fp);
         fp = temp;
-        i = (i ^ hash(fp)) % capacity;
+        i = (i ^ hash(fp)) & (capacity - 1);
         if (buckets[i].hasEmptyEntry()) {
             buckets[i].insert(fp);
             ctr += 1;
             return true;
         }
     }
+    // std::cout << "Victim: " << fp << " " << i << std::endl;  // debug
     victim.index = i;
     victim.fingerprint = fp;
     return false;
@@ -130,8 +137,8 @@ bool CuckooFilter<fp_size>::insertFP(fp_size fp, uint64_t index, Victim &victim)
 template<typename fp_size>
 bool CuckooFilter<fp_size>::lookup(const char *key) {
     fp_size fp = fingerprint(key);
-    uint64_t i1 = hash(key) % capacity;
-    uint64_t i2 = (i1 ^ hash(fp)) % capacity;
+    uint64_t i1 = hash(key) & (capacity - 1);
+    uint64_t i2 = (i1 ^ hash(fp)) & (capacity - 1);
     if (buckets[i1].lookup(fp) || buckets[i2].lookup(fp)) {
         return true;
     }
@@ -141,8 +148,8 @@ bool CuckooFilter<fp_size>::lookup(const char *key) {
 template<typename fp_size>
 bool CuckooFilter<fp_size>::deleteKey(const char *key) {
     fp_size fp = fingerprint(key);
-    uint64_t i1 = hash(key) % capacity;
-    uint64_t i2 = (i1 ^ hash(fp)) % capacity;
+    uint64_t i1 = hash(key) & (capacity - 1);
+    uint64_t i2 = (i1 ^ hash(fp)) & (capacity - 1);
     if (buckets[i1].deleteKey(fp) || buckets[i2].deleteKey(fp)) {
         ctr -= 1;
         return true;
@@ -168,5 +175,8 @@ uint32_t CuckooFilter<fp_size>::fingerprint(const char *key) {
     if (fingerprint == 0) {
         fingerprint = 1;
     }
+    //std::cout << "Fingerprint: " << fingerprint << "for: " << key << std::endl;  // debug
     return fingerprint;
 }
+
+#endif //CUCKOOFILTER_H

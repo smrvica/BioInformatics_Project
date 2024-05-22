@@ -1,8 +1,8 @@
 
 
 typedef struct Victim {
-    size_t index;
-    uint64_t fingerprint;
+    size_t index = 0;
+    uint64_t fingerprint = 0;
 } Victim;
 
 

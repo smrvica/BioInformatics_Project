@@ -1,3 +1,5 @@
+#ifndef DYNAMIC_CUCKOO_FILTER_H
+#define DYNAMIC_CUCKOO_FILTER_H
 
 #include "linkedCuckooList.h"
 
@@ -27,11 +29,11 @@ public:
 template <typename fp_size>
 DynamicCuckooFilter<fp_size>::DynamicCuckooFilter(int singleTableCapacity, int bucketSize, int maxNoOfMoves, int bitsPerFp)
 {
-    this->singleTableCapacity = singleTableCapacity;
     this->bucketSize = bucketSize;
     this->maxNoOfMoves = maxNoOfMoves;
     this->bitsPerFp = bitsPerFp;
     list = new LinkedCuckooList<fp_size>(singleTableCapacity, bucketSize, maxNoOfMoves, bitsPerFp);
+    this->singleTableCapacity = list->head->getCapacity();
 }
 
 template <typename fp_size>
@@ -60,7 +62,7 @@ bool DynamicCuckooFilter<fp_size>::insert(const char *key, Victim &victim)
 template <typename fp_size>
 void DynamicCuckooFilter<fp_size>::storeVictim(Victim &victim)
 {
-    std::cout << "STORING VICTIM\n";
+    // std::cout << "STORING VICTIM\n";  // debug
     CuckooFilter<fp_size> *temp = list->head;
     while (temp != nullptr)
     {
@@ -71,6 +73,7 @@ void DynamicCuckooFilter<fp_size>::storeVictim(Victim &victim)
                 return;
             }
         }
+        temp = temp->next;
     }
     CuckooFilter<fp_size> *newCF = list->getNewCF();
     newCF->insertFP(victim.fingerprint, victim.index, victim);
@@ -117,3 +120,5 @@ void DynamicCuckooFilter<fp_size>::print()
         temp = temp->next;
     }
 }
+
+#endif

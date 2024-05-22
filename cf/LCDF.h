@@ -25,35 +25,35 @@ public:
 };
 
 template <typename fp_size>
-inline void LCDF<fp_size>::storeVictim(Victim &victim)
+void LCDF<fp_size>::storeVictim(Victim &victim)
 {
-    std::cout << "STORING VICTIM\n";
+    // std::cout << "STORING VICTIM\n"; // debug
     CuckooNode<fp_size> *curr = root;
-    bool bit = 0;
+    //bool bit = 0;
     int depth = 0;
-    while (!curr->curr->insertFP(victim.fingerprint, victim.index, victim) && depth < bitsPerFp)
+    while (!curr->getCurr()->insertFP(victim.fingerprint, victim.index, victim) && depth < bitsPerFp)
     {
         bool bit = (victim.fingerprint >> (bitsPerFp - 1 - depth)) & 0x1;
         if (bit)
         {
-            if (!curr->right)
+            if (curr->hasRight())
             {
-                curr = curr->getNewRightCF();
+                curr = curr->getRight();
             }
             else
             {
-                curr = curr->right;
+                curr = curr->getNewRightCF();
             }
         }
         else
         {
-            if (!curr->left)
+            if (curr->hasLeft())
             {
-                curr = curr->getNewLeftCF();
+                curr = curr->getLeft();
             }
             else
             {
-                curr = curr->left;
+                curr = curr->getNewLeftCF();
             }
         }
         depth++;
@@ -61,7 +61,7 @@ inline void LCDF<fp_size>::storeVictim(Victim &victim)
 }
 
 template <typename fp_size>
-inline LCDF<fp_size>::LCDF(int singleTableCapacity, int bucketSize, int maxNoOfMoves, int bitsPerFp)
+LCDF<fp_size>::LCDF(int singleTableCapacity, int bucketSize, int maxNoOfMoves, int bitsPerFp)
 {
     this->singleTableCapacity = singleTableCapacity;
     this->bucketSize = bucketSize;
@@ -72,106 +72,111 @@ inline LCDF<fp_size>::LCDF(int singleTableCapacity, int bucketSize, int maxNoOfM
 }
 
 template <typename fp_size>
-inline LCDF<fp_size>::~LCDF()
+LCDF<fp_size>::~LCDF()
 {
     delete root;
 }
 
 template <typename fp_size>
-inline bool LCDF<fp_size>::insert(const char *key, Victim &victim)
+bool LCDF<fp_size>::insert(const char *key, Victim &victim)
 {
     CuckooNode<fp_size> *curr = root;
-    bool bit = 0;
+    //bool bit = 0;
     int depth = 0;
-    while (!curr->curr->insert(key, victim) && depth < bitsPerFp)
-    {
-        bool bit = (curr->curr->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-        if (bit)
-        {
-            if (!curr->right)
-            {
-                curr = curr->getNewRightCF();
+    CuckooFilter<fp_size> *cf = curr->getCurr();
+    while (depth < bitsPerFp) {
+        if (cf->isFull()) {
+            bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
+            if (bit) {
+                if (curr->hasRight()) {
+                    curr = curr->getRight();
+                } else {
+                    curr = curr->getNewRightCF();
+                }
+                cf = curr->getCurr();
+            } else {
+                if (curr->hasLeft()) {
+                    curr = curr->getLeft();
+                } else {
+                    curr = curr->getNewLeftCF();
+                }
+                cf = curr->getCurr();
             }
-            else
-            {
-                curr = curr->right;
-            }
+            depth++;
+            continue;
         }
-        else
-        {
-            if (!curr->left)
-            {
-                curr = curr->getNewLeftCF();
-            }
-            else
-            {
-                curr = curr->left;
-            }
+        if (cf->insert(key, victim)) {
+            return true;
         }
-        depth++;
+        storeVictim(victim);
+        return true;
     }
-    if (!depth < bitsPerFp)
-    {
-        std::cout << "HA?\n";
-        return false;
-    }
-    storeVictim(victim);
-    return true;
 }
 
 template <typename fp_size>
-inline bool LCDF<fp_size>::lookup(const char *key)
+bool LCDF<fp_size>::lookup(const char *key)
 {
     CuckooNode<fp_size> *curr = root;
-    bool bit = 0;
+    //bool bit = false;
     int depth = 0;
-    while (curr->curr && depth < bitsPerFp)
-    {
-        if (curr->curr->lookup(key))
-        {
+    CuckooFilter<fp_size> *cf = curr->getCurr();
+    while (depth < bitsPerFp) {
+        if (cf->lookup(key)) {
             return true;
         }
-        bool bit = (curr->curr->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-        if (bit)
-        {
-            curr = curr->right;
+        bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
+        if (bit) {
+            if (curr->hasRight()) {
+                curr = curr->getRight();
+            } else {
+                return false;
+            }
+        } else {
+            if (curr->hasLeft()) {
+                curr = curr->getLeft();
+            } else {
+                return false;
+            }
         }
-        else
-        {
-            curr = curr->left;
-        }
+        cf = curr->getCurr();
         depth++;
     }
     return false;
 }
 
 template <typename fp_size>
-inline bool LCDF<fp_size>::deleteKey(const char *key)
+bool LCDF<fp_size>::deleteKey(const char *key)
 {
     CuckooNode<fp_size> *curr = root;
-    bool bit = 0;
+    //bool bit = 0;
     int depth = 0;
-    while (curr->curr && depth < bitsPerFp)
-    {
-        if (curr->curr->deleteKey(key))
-        {
+    CuckooFilter<fp_size> *cf = curr->getCurr();
+    while (depth < bitsPerFp) {
+        if (cf->deleteKey(key)) {
             return true;
         }
-        bool bit = (curr->curr->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-        if (bit)
-        {
-            curr = curr->right;
+        bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
+        if (bit) {
+            if (curr->hasRight()) {
+                curr = curr->getRight();
+            } else {
+                return false;
+            }
+        } else {
+            if (curr->hasLeft()) {
+                curr = curr->getLeft();
+            } else {
+                return false;
+            }
         }
-        else
-        {
-            curr = curr->left;
-        }
+        cf = curr->getCurr();
         depth++;
     }
+    return false;
 }
 
 template <typename fp_size>
-inline void LCDF<fp_size>::print()
+void LCDF<fp_size>::print()
 {
     std::cout << "LCDF\n";
     root->print();
