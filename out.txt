@@ -1,0 +1,281 @@
+
+
+
+===============================
+SIMULATING ON REAL E. COLI GENOME
+===============================
+Starting... k = 10
+GENOME LEN:4641652
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 1691223 microseconds, Query Time: 1642726 microseconds, False Look Up Time: 832 microseconds, Memory Usage: 20691 MB
+Memory Usage Before: 13742080 MB, Memory Usage After: 21270528 MB Memory difference:7528448
+
+
+Starting... k = 20
+GENOME LEN:4641652
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 728452 microseconds, Query Time: 842248 microseconds, False Look Up Time: 48 microseconds, Memory Usage: 20786 MB
+Memory Usage Before: 21295104 MB, Memory Usage After: 21368832 MB Memory difference:73728
+
+
+Starting... k = 50
+GENOME LEN:4641652
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 322460 microseconds, Query Time: 459404 microseconds, False Look Up Time: 23 microseconds, Memory Usage: 20786 MB
+Memory Usage Before: 21368832 MB, Memory Usage After: 21368832 MB Memory difference:0
+
+
+Starting... k = 100
+GENOME LEN:4641652
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 185596 microseconds, Query Time: 303643 microseconds, False Look Up Time: 54 microseconds, Memory Usage: 20786 MB
+Memory Usage Before: 21368832 MB, Memory Usage After: 21368832 MB Memory difference:0
+
+
+Starting... k = 200
+GENOME LEN:4641652
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 107169 microseconds, Query Time: 196861 microseconds, False Look Up Time: 45 microseconds, Memory Usage: 20794 MB
+Memory Usage Before: 21377024 MB, Memory Usage After: 21377024 MB Memory difference:0
+
+
+===============================
+SIMULATING ON RANDOMLY GENERATED GENOME 10^3
+===============================
+
+
+Starting... k = 10
+GENOME LEN:1000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 44 microseconds, Query Time: 35 microseconds, False Look Up Time: 8 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 20
+GENOME LEN:1000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 19 microseconds, Query Time: 18 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 50
+GENOME LEN:1000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 13 microseconds, Query Time: 11 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 100
+GENOME LEN:1000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 9 microseconds, Query Time: 8 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 200
+GENOME LEN:1000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 6 microseconds, Query Time: 5 microseconds, False Look Up Time: 2 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+===============================
+SIMULATING ON RANDOMLY GENERATED GENOME 10^4
+===============================
+
+
+Starting... k = 10
+GENOME LEN:10000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 883 microseconds, Query Time: 915 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 20
+GENOME LEN:10000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 367 microseconds, Query Time: 365 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 50
+GENOME LEN:10000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 161 microseconds, Query Time: 160 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 100
+GENOME LEN:10000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 83 microseconds, Query Time: 80 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+
+
+Starting... k = 200
+GENOME LEN:10000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 56 microseconds, Query Time: 55 microseconds, False Look Up Time: 3 microseconds, Memory Usage: 20798 MB
+Memory Usage Before: 21381120 MB, Memory Usage After: 21381120 MB Memory difference:0
+
+
+===============================
+SIMULATING ON RANDOMLY GENERATED GENOME 10^5
+===============================
+
+
+Starting... k = 10
+GENOME LEN:100000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 17187 microseconds, Query Time: 20219 microseconds, False Look Up Time: 4 microseconds, Memory Usage: 20822 MB
+Memory Usage Before: 21405696 MB, Memory Usage After: 21405696 MB Memory difference:0
+
+
+
+
+Starting... k = 20
+GENOME LEN:100000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 7316 microseconds, Query Time: 9146 microseconds, False Look Up Time: 14 microseconds, Memory Usage: 20822 MB
+Memory Usage Before: 21405696 MB, Memory Usage After: 21405696 MB Memory difference:0
+
+
+
+
+Starting... k = 50
+GENOME LEN:100000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 3227 microseconds, Query Time: 4190 microseconds, False Look Up Time: 29 microseconds, Memory Usage: 20822 MB
+Memory Usage Before: 21405696 MB, Memory Usage After: 21405696 MB Memory difference:0
+
+
+
+
+Starting... k = 100
+GENOME LEN:100000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1597 microseconds, Query Time: 2147 microseconds, False Look Up Time: 4 microseconds, Memory Usage: 20822 MB
+Memory Usage Before: 21405696 MB, Memory Usage After: 21405696 MB Memory difference:0
+
+
+
+
+Starting... k = 200
+GENOME LEN:100000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 843 microseconds, Query Time: 1117 microseconds, False Look Up Time: 4 microseconds, Memory Usage: 20822 MB
+Memory Usage Before: 21405696 MB, Memory Usage After: 21405696 MB Memory difference:0
+
+
+===============================
+SIMULATING ON RANDOMLY GENERATED GENOME 10^6
+===============================
+
+
+Starting... k = 10
+GENOME LEN:1000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 279383 microseconds, Query Time: 314881 microseconds, False Look Up Time: 28 microseconds, Memory Usage: 21890 MB
+Memory Usage Before: 22409216 MB, Memory Usage After: 22503424 MB Memory difference:94208
+
+
+
+
+Starting... k = 20
+GENOME LEN:1000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 134618 microseconds, Query Time: 180812 microseconds, False Look Up Time: 30 microseconds, Memory Usage: 21890 MB
+Memory Usage Before: 22503424 MB, Memory Usage After: 22503424 MB Memory difference:0
+
+
+
+
+Starting... k = 50
+GENOME LEN:1000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 51781 microseconds, Query Time: 77488 microseconds, False Look Up Time: 29 microseconds, Memory Usage: 21890 MB
+Memory Usage Before: 22503424 MB, Memory Usage After: 22503424 MB Memory difference:0
+
+
+
+
+Starting... k = 100
+GENOME LEN:1000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 28400 microseconds, Query Time: 47924 microseconds, False Look Up Time: 16 microseconds, Memory Usage: 21890 MB
+Memory Usage Before: 22503424 MB, Memory Usage After: 22503424 MB Memory difference:0
+
+
+
+
+Starting... k = 200
+GENOME LEN:1000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 16397 microseconds, Query Time: 28305 microseconds, False Look Up Time: 13 microseconds, Memory Usage: 21890 MB
+Memory Usage Before: 22503424 MB, Memory Usage After: 22503424 MB Memory difference:0
+
+
+===============================
+SIMULATING ON RANDOMLY GENERATED GENOME 10^7
+===============================
+
+
+Starting... k = 10
+GENOME LEN:10000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 4214430 microseconds, Query Time: 3718646 microseconds, False Look Up Time: 40 microseconds, Memory Usage: 61336 MB
+Memory Usage Before: 52523008 MB, Memory Usage After: 63053824 MB Memory difference:10530816
+
+
+
+
+Starting... k = 20
+GENOME LEN:10000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 1725493 microseconds, Query Time: 1902461 microseconds, False Look Up Time: 31 microseconds, Memory Usage: 61368 MB
+Memory Usage Before: 63070208 MB, Memory Usage After: 63086592 MB Memory difference:16384
+
+
+
+
+Starting... k = 50
+GENOME LEN:10000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 797087 microseconds, Query Time: 1065937 microseconds, False Look Up Time: 33 microseconds, Memory Usage: 61368 MB
+Memory Usage Before: 63086592 MB, Memory Usage After: 63086592 MB Memory difference:0
+
+
+
+
+Starting... k = 100
+GENOME LEN:10000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 458665 microseconds, Query Time: 736870 microseconds, False Look Up Time: 34 microseconds, Memory Usage: 61368 MB
+Memory Usage Before: 63086592 MB, Memory Usage After: 63086592 MB Memory difference:0
+
+
+
+
+Starting... k = 200
+GENOME LEN:10000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 285903 microseconds, Query Time: 509630 microseconds, False Look Up Time: 28 microseconds, Memory Usage: 61368 MB
+Memory Usage Before: 63086592 MB, Memory Usage After: 63086592 MB Memory difference:0
+
+

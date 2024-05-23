@@ -29,7 +29,7 @@ void LCDF<fp_size>::storeVictim(Victim &victim)
 {
     // std::cout << "STORING VICTIM\n"; // debug
     CuckooNode<fp_size> *curr = root;
-    //bool bit = 0;
+    // bool bit = 0;
     int depth = 0;
     while (!curr->getCurr()->insertFP(victim.fingerprint, victim.index, victim) && depth < bitsPerFp)
     {
@@ -81,23 +81,34 @@ template <typename fp_size>
 bool LCDF<fp_size>::insert(const char *key, Victim &victim)
 {
     CuckooNode<fp_size> *curr = root;
-    //bool bit = 0;
+    // bool bit = 0;
     int depth = 0;
     CuckooFilter<fp_size> *cf = curr->getCurr();
-    while (depth < bitsPerFp) {
-        if (cf->isFull()) {
+    while (depth < bitsPerFp)
+    {
+        if (cf->isFull())
+        {
             bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-            if (bit) {
-                if (curr->hasRight()) {
+            if (bit)
+            {
+                if (curr->hasRight())
+                {
                     curr = curr->getRight();
-                } else {
+                }
+                else
+                {
                     curr = curr->getNewRightCF();
                 }
                 cf = curr->getCurr();
-            } else {
-                if (curr->hasLeft()) {
+            }
+            else
+            {
+                if (curr->hasLeft())
+                {
                     curr = curr->getLeft();
-                } else {
+                }
+                else
+                {
                     curr = curr->getNewLeftCF();
                 }
                 cf = curr->getCurr();
@@ -105,36 +116,49 @@ bool LCDF<fp_size>::insert(const char *key, Victim &victim)
             depth++;
             continue;
         }
-        if (cf->insert(key, victim)) {
+        if (cf->insert(key, victim))
+        {
             return true;
         }
         storeVictim(victim);
         return true;
     }
+    return false;
 }
 
 template <typename fp_size>
 bool LCDF<fp_size>::lookup(const char *key)
 {
     CuckooNode<fp_size> *curr = root;
-    //bool bit = false;
+    // bool bit = false;
     int depth = 0;
     CuckooFilter<fp_size> *cf = curr->getCurr();
-    while (depth < bitsPerFp) {
-        if (cf->lookup(key)) {
+    while (depth < bitsPerFp)
+    {
+        if (cf->lookup(key))
+        {
             return true;
         }
         bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-        if (bit) {
-            if (curr->hasRight()) {
+        if (bit)
+        {
+            if (curr->hasRight())
+            {
                 curr = curr->getRight();
-            } else {
+            }
+            else
+            {
                 return false;
             }
-        } else {
-            if (curr->hasLeft()) {
+        }
+        else
+        {
+            if (curr->hasLeft())
+            {
                 curr = curr->getLeft();
-            } else {
+            }
+            else
+            {
                 return false;
             }
         }
@@ -148,24 +172,35 @@ template <typename fp_size>
 bool LCDF<fp_size>::deleteKey(const char *key)
 {
     CuckooNode<fp_size> *curr = root;
-    //bool bit = 0;
+    // bool bit = 0;
     int depth = 0;
     CuckooFilter<fp_size> *cf = curr->getCurr();
-    while (depth < bitsPerFp) {
-        if (cf->deleteKey(key)) {
+    while (depth < bitsPerFp)
+    {
+        if (cf->deleteKey(key))
+        {
             return true;
         }
         bool bit = (cf->fingerprint(key) >> (bitsPerFp - 1 - depth)) & 0x1;
-        if (bit) {
-            if (curr->hasRight()) {
+        if (bit)
+        {
+            if (curr->hasRight())
+            {
                 curr = curr->getRight();
-            } else {
+            }
+            else
+            {
                 return false;
             }
-        } else {
-            if (curr->hasLeft()) {
+        }
+        else
+        {
+            if (curr->hasLeft())
+            {
                 curr = curr->getLeft();
-            } else {
+            }
+            else
+            {
                 return false;
             }
         }
