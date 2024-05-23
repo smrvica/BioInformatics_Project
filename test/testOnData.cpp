@@ -5,42 +5,41 @@
 #include <ctime>
 #include <chrono>
 #include <sys/resource.h>
-#include <stdint.h>
+#include <cstdint>
 #include <initializer_list>
 
 // g++ -std=c++11 test/testOnData.cpp -o testOnData
 
-#include <stdint.h>
 #include "../cf/LCDF.h"
 
 typedef uint16_t fp_type;
 static const int bits_per_fp = 16;
 
-void performTest(int k, const std::string &genome, std::string filepath)
+void performTest(int k, const std::string &genome, const std::string &filepath)
 {
     struct rusage usageBefore, usageAfter;
     getrusage(RUSAGE_SELF, &usageBefore);
     long memoryUsageBefore = usageBefore.ru_maxrss;
 
-    LCDF<fp_type> cf = LCDF<fp_type>(20, 10, 5, bits_per_fp);
+    LCDF<fp_type> cf(20, 10, 5, bits_per_fp);
     Victim victim;
 
-    std::cout << "GENOME LEN:" << genome.length() << "\n";
+    std::cout << "GENOME LEN: " << genome.length() << "\n";
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < genome.length() / k; ++i)
+    for (size_t i = 0; i < genome.length() / k; ++i)
     {
-        std::string randomSubsequence = genome.substr(i * k, k);
-        cf.insert(randomSubsequence.c_str(), victim);
+        std::string subsequence = genome.substr(i * k, k);
+        cf.insert(subsequence.c_str(), victim);
     }
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
 
     auto startQuery = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < genome.length() / k; ++i)
+    for (size_t i = 0; i < genome.length() / k; ++i)
     {
-        std::string randomSubsequence = genome.substr(i * k, k);
-        int result = cf.lookup(randomSubsequence.c_str());
+        std::string subsequence = genome.substr(i * k, k);
+        int result = cf.lookup(subsequence.c_str());
     }
     auto endQuery = std::chrono::high_resolution_clock::now();
     auto queryTime = std::chrono::duration_cast<std::chrono::microseconds>(endQuery - startQuery).count();
@@ -48,12 +47,10 @@ void performTest(int k, const std::string &genome, std::string filepath)
     getrusage(RUSAGE_SELF, &usageAfter);
     long memoryUsageAfter = usageAfter.ru_maxrss;
 
-    struct rusage usage;
-    getrusage(RUSAGE_SELF, &usage);
-    long memoryUsage = usage.ru_maxrss / 1028;
+    long memoryUsage = usageAfter.ru_maxrss / 1024; // Corrected division factor
 
     auto startFalseLookUp = std::chrono::high_resolution_clock::now();
-    std::string filename = filepath + std::to_string(k) + ".txt ";
+    std::string filename = filepath + std::to_string(k) + ".txt";
     std::ifstream simulatedData(filename);
     std::string line;
     int sum = 0;
@@ -72,23 +69,29 @@ void performTest(int k, const std::string &genome, std::string filepath)
     auto falseLookUpTime = std::chrono::duration_cast<std::chrono::microseconds>(endFalseLookUp - startFalseLookUp).count();
 
     std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Memory Usage: " << memoryUsage << " MB" << std::endl;
-    std::cout << "Memory Usage Before: " << memoryUsageBefore << " MB, Memory Usage After: " << memoryUsageAfter << " MB Memory difference:" << memoryUsageAfter - memoryUsageBefore << "\n\n\n";
+    std::cout << "Memory Usage Before: " << memoryUsageBefore << " KB, Memory Usage After: " << memoryUsageAfter << " KB, Memory difference: " << (memoryUsageAfter - memoryUsageBefore) << " KB\n\n\n";
 }
 
-int main()
+std::string readGenomeFromFile(const std::string &filename)
 {
-    std::ifstream eColiGenome("data/e_coli_genome.fna");
+    std::ifstream genomeFile(filename);
     std::string line, genome;
-    while (std::getline(eColiGenome, line))
+    while (std::getline(genomeFile, line))
     {
         if (line[0] != '>')
         {
             genome += line;
         }
     }
-    eColiGenome.close();
+    genomeFile.close();
+    return genome;
+}
 
-    srand(time(NULL));
+int main()
+{
+    std::string genome = readGenomeFromFile("data/e_coli_genome.fna");
+
+    srand(static_cast<unsigned>(time(NULL)));
 
     std::cout << "\n\n\n===============================\n"
               << "SIMULATING ON REAL E. COLI GENOME\n"
@@ -102,17 +105,8 @@ int main()
     for (int i : {3, 4, 5, 6, 7})
     {
         std::string filename = "data/len_" + std::to_string(i) + "/sequence.fna";
-        std::string filepath = "data/len_" + std::to_string(i) + "/new_kmers_ " + std::to_string(i) + "_";
-        std::ifstream simulatedData(filename);
-        genome = "";
-        while (std::getline(simulatedData, line))
-        {
-            if (line[0] != '>')
-            {
-                genome += line;
-            }
-        }
-        simulatedData.close();
+        std::string genome = readGenomeFromFile(filename);
+        std::string filepath = "data/len_" + std::to_string(i) + "/new_kmers_" + std::to_string(i) + "_";
 
         std::cout << "===============================\n"
                   << "SIMULATING ON RANDOMLY GENERATED GENOME 10^" << i << "\n"
