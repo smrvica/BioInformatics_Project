@@ -1,0 +1,1464 @@
+===============================
+SIMULATING ON E. COLI GENOME
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 4641652
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 100%
+k = 10, Insertion Time: 1727371 microseconds, Query Time: 1678962 microseconds, False Look Up Time: 1336 microseconds, Delete Time: 1616519 microseconds, Memory Usage: 20780 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 21278720 KB, Memory difference: 7544832 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 4641652
+1111110000010111110111111111011101001011101111001101110111111010111001111110011111011100111111001101
+FALSE POSITIVES: 71%
+k = 10, Insertion Time: 1563893 microseconds, Query Time: 1931505 microseconds, False Look Up Time: 639 microseconds, Delete Time: 1869009 microseconds, Memory Usage: 20176 MB
+Memory Usage Before: 13713408 KB, Memory Usage After: 20660224 KB, Memory difference: 6946816 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 4641652
+0110100000110010010000100001011001000001000111101000000101101000110001111110010111000000001001000100
+FALSE POSITIVES: 37%
+k = 10, Insertion Time: 1540476 microseconds, Query Time: 2010802 microseconds, False Look Up Time: 645 microseconds, Delete Time: 1955917 microseconds, Memory Usage: 20240 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 20725760 KB, Memory difference: 6991872 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 4641652
+1100100000100111010100100001001001100001000011101000000101001000010001001000000111010000001001000000
+FALSE POSITIVES: 31%
+k = 10, Insertion Time: 1612561 microseconds, Query Time: 2036564 microseconds, False Look Up Time: 647 microseconds, Delete Time: 1961849 microseconds, Memory Usage: 20260 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 20746240 KB, Memory difference: 7012352 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000011000000100001000001000000000011101000000000001000110001011000000110000000001001000000
+FALSE POSITIVES: 19%
+k = 10, Insertion Time: 1690786 microseconds, Query Time: 2022043 microseconds, False Look Up Time: 678 microseconds, Delete Time: 1958117 microseconds, Memory Usage: 20248 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 20733952 KB, Memory difference: 7000064 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000110000000100001000001000001000011101000000001001000010001001000000110000000001001000000
+FALSE POSITIVES: 19%
+k = 10, Insertion Time: 1797700 microseconds, Query Time: 2157433 microseconds, False Look Up Time: 924 microseconds, Delete Time: 2036101 microseconds, Memory Usage: 20236 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 20721664 KB, Memory difference: 6987776 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 4641652
+1111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 99%
+k = 20, Insertion Time: 724405 microseconds, Query Time: 876415 microseconds, False Look Up Time: 1379 microseconds, Delete Time: 829606 microseconds, Memory Usage: 16864 MB
+Memory Usage Before: 13729792 KB, Memory Usage After: 17268736 KB, Memory difference: 3538944 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 4641652
+0011101101000010010000001100011111011011110100110101000110110011011100101010000010000110111010100010
+FALSE POSITIVES: 47%
+k = 20, Insertion Time: 706716 microseconds, Query Time: 993969 microseconds, False Look Up Time: 664 microseconds, Delete Time: 941383 microseconds, Memory Usage: 16704 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 17104896 KB, Memory difference: 3371008 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 4641652
+1000100001000010000001001100011010000010000000000100000000010001000000101000000010000000000010000010
+FALSE POSITIVES: 19%
+k = 20, Insertion Time: 704942 microseconds, Query Time: 1023836 microseconds, False Look Up Time: 697 microseconds, Delete Time: 967628 microseconds, Memory Usage: 16840 MB
+Memory Usage Before: 13713408 KB, Memory Usage After: 17244160 KB, Memory difference: 3530752 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000010000000000001000000010000000000000000000000000010001000000001000000000000000000010000010
+FALSE POSITIVES: 8%
+k = 20, Insertion Time: 740017 microseconds, Query Time: 1017160 microseconds, False Look Up Time: 711 microseconds, Delete Time: 969159 microseconds, Memory Usage: 16852 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 17256448 KB, Memory difference: 3522560 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 4641652
+1000000000010000000000000000000000000000001000100000000100000000000000001000000000000000100010000000
+FALSE POSITIVES: 8%
+k = 20, Insertion Time: 784019 microseconds, Query Time: 1019104 microseconds, False Look Up Time: 688 microseconds, Delete Time: 961709 microseconds, Memory Usage: 16868 MB
+Memory Usage Before: 13750272 KB, Memory Usage After: 17272832 KB, Memory difference: 3522560 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 825382 microseconds, Query Time: 1012775 microseconds, False Look Up Time: 662 microseconds, Delete Time: 959724 microseconds, Memory Usage: 16852 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 17256448 KB, Memory difference: 3522560 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 4641652
+0100101011101111110101111011111111001111101111111101111011111011101101111111111100011001111111111111
+FALSE POSITIVES: 78%
+k = 50, Insertion Time: 317029 microseconds, Query Time: 499664 microseconds, False Look Up Time: 1654 microseconds, Delete Time: 447308 microseconds, Memory Usage: 14868 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 15224832 KB, Memory difference: 1490944 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 4641652
+0100000000100100000001011001110100000100000000000101000011000000100100011000000000000000011011001010
+FALSE POSITIVES: 25%
+k = 50, Insertion Time: 303129 microseconds, Query Time: 543000 microseconds, False Look Up Time: 983 microseconds, Delete Time: 496893 microseconds, Memory Usage: 14852 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 15208448 KB, Memory difference: 1474560 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000000000100000000000000000100000000000000000000101000001000000000100000000100000000000001000000000
+FALSE POSITIVES: 8%
+k = 50, Insertion Time: 300489 microseconds, Query Time: 553859 microseconds, False Look Up Time: 935 microseconds, Delete Time: 502052 microseconds, Memory Usage: 14748 MB
+Memory Usage Before: 13713408 KB, Memory Usage After: 15101952 KB, Memory difference: 1388544 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000000000000000000000000000001000000000000000000001000000000100000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 50, Insertion Time: 301929 microseconds, Query Time: 543795 microseconds, False Look Up Time: 951 microseconds, Delete Time: 494738 microseconds, Memory Usage: 14732 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 15085568 KB, Memory difference: 1351680 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000100000000000000000000000000000000000000000000000000000000100000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 50, Insertion Time: 319180 microseconds, Query Time: 543288 microseconds, False Look Up Time: 956 microseconds, Delete Time: 492196 microseconds, Memory Usage: 14728 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 15081472 KB, Memory difference: 1347584 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000000010000000000000001000000000000000000000000000000000000000000000000010000000
+FALSE POSITIVES: 3%
+k = 50, Insertion Time: 329129 microseconds, Query Time: 541505 microseconds, False Look Up Time: 941 microseconds, Delete Time: 490209 microseconds, Memory Usage: 14716 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 15069184 KB, Memory difference: 1335296 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 4641652
+1011110110001110100000110101110011000010111010001001101101001000001100010011000010010111010011100000
+FALSE POSITIVES: 45%
+k = 100, Insertion Time: 184423 microseconds, Query Time: 348394 microseconds, False Look Up Time: 2333 microseconds, Delete Time: 300445 microseconds, Memory Usage: 14176 MB
+Memory Usage Before: 13697024 KB, Memory Usage After: 14516224 KB, Memory difference: 819200 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 4641652
+1001100010001100100000000000010010000000111000000000100000000000001000010010000000000001000001000000
+FALSE POSITIVES: 18%
+k = 100, Insertion Time: 173804 microseconds, Query Time: 376540 microseconds, False Look Up Time: 1366 microseconds, Delete Time: 324868 microseconds, Memory Usage: 14164 MB
+Memory Usage Before: 13750272 KB, Memory Usage After: 14503936 KB, Memory difference: 753664 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000100000000000000000000000000010000000000000000000000000000000000000000000000000010000000000000000
+FALSE POSITIVES: 3%
+k = 100, Insertion Time: 175750 microseconds, Query Time: 380631 microseconds, False Look Up Time: 1384 microseconds, Delete Time: 327130 microseconds, Memory Usage: 14112 MB
+Memory Usage Before: 13750272 KB, Memory Usage After: 14450688 KB, Memory difference: 700416 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000100000000000000000000000000010000000001000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 100, Insertion Time: 180926 microseconds, Query Time: 375400 microseconds, False Look Up Time: 1371 microseconds, Delete Time: 321558 microseconds, Memory Usage: 14128 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 14467072 KB, Memory difference: 733184 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 100, Insertion Time: 186427 microseconds, Query Time: 368035 microseconds, False Look Up Time: 1314 microseconds, Delete Time: 330235 microseconds, Memory Usage: 14096 MB
+Memory Usage Before: 13697024 KB, Memory Usage After: 14434304 KB, Memory difference: 737280 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000110000000000000000001000000000000001000000000000000000000000010000000000000000
+FALSE POSITIVES: 5%
+k = 100, Insertion Time: 186734 microseconds, Query Time: 361487 microseconds, False Look Up Time: 1338 microseconds, Delete Time: 320539 microseconds, Memory Usage: 14088 MB
+Memory Usage Before: 13750272 KB, Memory Usage After: 14426112 KB, Memory difference: 675840 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 4641652
+0000000010001000000000110111100001000000010011010000100101000000011001101000101100000010001101100111
+FALSE POSITIVES: 32%
+k = 200, Insertion Time: 106245 microseconds, Query Time: 248539 microseconds, False Look Up Time: 3103 microseconds, Delete Time: 194871 microseconds, Memory Usage: 13844 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 14176256 KB, Memory difference: 442368 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 4641652
+0000000000001000000000010000000000000000000001000000100101000000010000100000001000000000000100000000
+FALSE POSITIVES: 10%
+k = 200, Insertion Time: 100387 microseconds, Query Time: 261806 microseconds, False Look Up Time: 2021 microseconds, Delete Time: 205749 microseconds, Memory Usage: 13808 MB
+Memory Usage Before: 13717504 KB, Memory Usage After: 14139392 KB, Memory difference: 421888 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000001000000
+FALSE POSITIVES: 2%
+k = 200, Insertion Time: 102989 microseconds, Query Time: 262160 microseconds, False Look Up Time: 2111 microseconds, Delete Time: 205802 microseconds, Memory Usage: 13840 MB
+Memory Usage Before: 13766656 KB, Memory Usage After: 14172160 KB, Memory difference: 405504 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 102496 microseconds, Query Time: 255543 microseconds, False Look Up Time: 1977 microseconds, Delete Time: 200895 microseconds, Memory Usage: 13756 MB
+Memory Usage Before: 13733888 KB, Memory Usage After: 14086144 KB, Memory difference: 352256 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000000000000000010000000000000000000000000000000000000000000000000000000000010000000000000
+FALSE POSITIVES: 2%
+k = 200, Insertion Time: 105529 microseconds, Query Time: 250288 microseconds, False Look Up Time: 1998 microseconds, Delete Time: 200325 microseconds, Memory Usage: 13780 MB
+Memory Usage Before: 13750272 KB, Memory Usage After: 14110720 KB, Memory difference: 360448 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000010000100000000000000000000000000000000000001000000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 200, Insertion Time: 105926 microseconds, Query Time: 255654 microseconds, False Look Up Time: 1950 microseconds, Delete Time: 199683 microseconds, Memory Usage: 13780 MB
+Memory Usage Before: 13697024 KB, Memory Usage After: 14110720 KB, Memory difference: 413696 KB
+
+
+===============================
+SIMULATING ON SIMULATED DATA 10^3
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 46 microseconds, Query Time: 168 microseconds, False Look Up Time: 1953 microseconds, Delete Time: 102 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 134 microseconds, Query Time: 181 microseconds, False Look Up Time: 960 microseconds, Delete Time: 101 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 165 microseconds, Query Time: 148 microseconds, False Look Up Time: 734 microseconds, Delete Time: 124 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 124 microseconds, Query Time: 243 microseconds, False Look Up Time: 828 microseconds, Delete Time: 102 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 172 microseconds, Query Time: 137 microseconds, False Look Up Time: 704 microseconds, Delete Time: 99 microseconds, Memory Usage: 2720 MB
+Memory Usage Before: 2760704 KB, Memory Usage After: 2785280 KB, Memory difference: 24576 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 95 microseconds, Query Time: 239 microseconds, False Look Up Time: 807 microseconds, Delete Time: 99 microseconds, Memory Usage: 2724 MB
+Memory Usage Before: 2764800 KB, Memory Usage After: 2789376 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 63 microseconds, Query Time: 45 microseconds, False Look Up Time: 1098 microseconds, Delete Time: 26 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 30 microseconds, Query Time: 145 microseconds, False Look Up Time: 1799 microseconds, Delete Time: 114 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 81 microseconds, Query Time: 101 microseconds, False Look Up Time: 901 microseconds, Delete Time: 53 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 113 microseconds, Query Time: 123 microseconds, False Look Up Time: 1199 microseconds, Delete Time: 65 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 83 microseconds, Query Time: 84 microseconds, False Look Up Time: 904 microseconds, Delete Time: 52 microseconds, Memory Usage: 2724 MB
+Memory Usage Before: 2764800 KB, Memory Usage After: 2789376 KB, Memory difference: 24576 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 64 microseconds, Query Time: 103 microseconds, False Look Up Time: 1077 microseconds, Delete Time: 53 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 56 microseconds, Query Time: 194 microseconds, False Look Up Time: 2519 microseconds, Delete Time: 34 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 59 microseconds, Query Time: 165 microseconds, False Look Up Time: 1540 microseconds, Delete Time: 33 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 55 microseconds, Query Time: 156 microseconds, False Look Up Time: 1323 microseconds, Delete Time: 35 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 55 microseconds, Query Time: 133 microseconds, False Look Up Time: 1326 microseconds, Delete Time: 34 microseconds, Memory Usage: 2736 MB
+Memory Usage Before: 2760704 KB, Memory Usage After: 2801664 KB, Memory difference: 40960 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 58 microseconds, Query Time: 336 microseconds, False Look Up Time: 2407 microseconds, Delete Time: 42 microseconds, Memory Usage: 2728 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2793472 KB, Memory difference: 49152 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 53 microseconds, Query Time: 174 microseconds, False Look Up Time: 1656 microseconds, Delete Time: 41 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 36 microseconds, Query Time: 77 microseconds, False Look Up Time: 2372 microseconds, Delete Time: 21 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 20 microseconds, Query Time: 169 microseconds, False Look Up Time: 2384 microseconds, Delete Time: 26 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 36 microseconds, Query Time: 158 microseconds, False Look Up Time: 2377 microseconds, Delete Time: 26 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 38 microseconds, Query Time: 106 microseconds, False Look Up Time: 2384 microseconds, Delete Time: 26 microseconds, Memory Usage: 2704 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2768896 KB, Memory difference: 24576 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 43 microseconds, Query Time: 112 microseconds, False Look Up Time: 2195 microseconds, Delete Time: 28 microseconds, Memory Usage: 2732 MB
+Memory Usage Before: 2760704 KB, Memory Usage After: 2797568 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 42 microseconds, Query Time: 105 microseconds, False Look Up Time: 2159 microseconds, Delete Time: 26 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 25 microseconds, Query Time: 148 microseconds, False Look Up Time: 6980 microseconds, Delete Time: 25 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 44 microseconds, Query Time: 178 microseconds, False Look Up Time: 4673 microseconds, Delete Time: 20 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 25 microseconds, Query Time: 168 microseconds, False Look Up Time: 4107 microseconds, Delete Time: 18 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 33 microseconds, Query Time: 86 microseconds, False Look Up Time: 3972 microseconds, Delete Time: 20 microseconds, Memory Usage: 2736 MB
+Memory Usage Before: 2760704 KB, Memory Usage After: 2801664 KB, Memory difference: 40960 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 25 microseconds, Query Time: 148 microseconds, False Look Up Time: 4422 microseconds, Delete Time: 19 microseconds, Memory Usage: 2716 MB
+Memory Usage Before: 2744320 KB, Memory Usage After: 2781184 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 27 microseconds, Query Time: 46 microseconds, False Look Up Time: 4780 microseconds, Delete Time: 39 microseconds, Memory Usage: 2744 MB
+Memory Usage Before: 2785280 KB, Memory Usage After: 2809856 KB, Memory difference: 24576 KB
+
+
+===============================
+SIMULATING ON SIMULATED DATA 10^4
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 1215 microseconds, Query Time: 2877 microseconds, False Look Up Time: 1838 microseconds, Delete Time: 2735 microseconds, Memory Usage: 2788 MB
+Memory Usage Before: 2818048 KB, Memory Usage After: 2854912 KB, Memory difference: 36864 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 2015 microseconds, Query Time: 2944 microseconds, False Look Up Time: 1212 microseconds, Delete Time: 2837 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 2592 microseconds, Query Time: 5405 microseconds, False Look Up Time: 1287 microseconds, Delete Time: 3896 microseconds, Memory Usage: 2768 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2834432 KB, Memory difference: 36864 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 3240 microseconds, Query Time: 3273 microseconds, False Look Up Time: 1185 microseconds, Delete Time: 2974 microseconds, Memory Usage: 2768 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2834432 KB, Memory difference: 36864 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 3100 microseconds, Query Time: 2971 microseconds, False Look Up Time: 969 microseconds, Delete Time: 2893 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 3501 microseconds, Query Time: 2951 microseconds, False Look Up Time: 1014 microseconds, Delete Time: 3006 microseconds, Memory Usage: 2796 MB
+Memory Usage Before: 2813952 KB, Memory Usage After: 2863104 KB, Memory difference: 49152 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 1105 microseconds, Query Time: 1989 microseconds, False Look Up Time: 4031 microseconds, Delete Time: 1405 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2826240 KB, Memory difference: 28672 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 711 microseconds, Query Time: 851 microseconds, False Look Up Time: 721 microseconds, Delete Time: 769 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2826240 KB, Memory difference: 28672 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 610 microseconds, Query Time: 1209 microseconds, False Look Up Time: 1134 microseconds, Delete Time: 1656 microseconds, Memory Usage: 2740 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2805760 KB, Memory difference: 28672 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 1136 microseconds, Query Time: 1108 microseconds, False Look Up Time: 1130 microseconds, Delete Time: 1078 microseconds, Memory Usage: 2740 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2805760 KB, Memory difference: 28672 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 1120 microseconds, Query Time: 1088 microseconds, False Look Up Time: 1043 microseconds, Delete Time: 1067 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2826240 KB, Memory difference: 28672 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 1270 microseconds, Query Time: 1125 microseconds, False Look Up Time: 1220 microseconds, Delete Time: 1080 microseconds, Memory Usage: 2740 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2805760 KB, Memory difference: 28672 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 508 microseconds, Query Time: 561 microseconds, False Look Up Time: 3138 microseconds, Delete Time: 907 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 491 microseconds, Query Time: 1051 microseconds, False Look Up Time: 3020 microseconds, Delete Time: 791 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 521 microseconds, Query Time: 1050 microseconds, False Look Up Time: 2676 microseconds, Delete Time: 598 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 652 microseconds, Query Time: 470 microseconds, False Look Up Time: 1705 microseconds, Delete Time: 442 microseconds, Memory Usage: 2756 MB
+Memory Usage Before: 2793472 KB, Memory Usage After: 2822144 KB, Memory difference: 28672 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 490 microseconds, Query Time: 704 microseconds, False Look Up Time: 1780 microseconds, Delete Time: 493 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 636 microseconds, Query Time: 589 microseconds, False Look Up Time: 1541 microseconds, Delete Time: 406 microseconds, Memory Usage: 2768 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2834432 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 275 microseconds, Query Time: 631 microseconds, False Look Up Time: 3362 microseconds, Delete Time: 255 microseconds, Memory Usage: 2736 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2801664 KB, Memory difference: 24576 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 277 microseconds, Query Time: 160 microseconds, False Look Up Time: 840 microseconds, Delete Time: 109 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 114 microseconds, Query Time: 749 microseconds, False Look Up Time: 2989 microseconds, Delete Time: 308 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2826240 KB, Memory difference: 49152 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 328 microseconds, Query Time: 407 microseconds, False Look Up Time: 3196 microseconds, Delete Time: 385 microseconds, Memory Usage: 2756 MB
+Memory Usage Before: 2797568 KB, Memory Usage After: 2822144 KB, Memory difference: 24576 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 259 microseconds, Query Time: 405 microseconds, False Look Up Time: 2311 microseconds, Delete Time: 254 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 433 microseconds, Query Time: 442 microseconds, False Look Up Time: 2716 microseconds, Delete Time: 309 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2826240 KB, Memory difference: 49152 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 234 microseconds, Query Time: 875 microseconds, False Look Up Time: 6692 microseconds, Delete Time: 177 microseconds, Memory Usage: 2776 MB
+Memory Usage Before: 2793472 KB, Memory Usage After: 2842624 KB, Memory difference: 49152 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 180 microseconds, Query Time: 307 microseconds, False Look Up Time: 4205 microseconds, Delete Time: 177 microseconds, Memory Usage: 2760 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2826240 KB, Memory difference: 49152 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 195 microseconds, Query Time: 301 microseconds, False Look Up Time: 4170 microseconds, Delete Time: 176 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 180 microseconds, Query Time: 641 microseconds, False Look Up Time: 8140 microseconds, Delete Time: 388 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 183 microseconds, Query Time: 430 microseconds, False Look Up Time: 4476 microseconds, Delete Time: 203 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 185 microseconds, Query Time: 273 microseconds, False Look Up Time: 4078 microseconds, Delete Time: 181 microseconds, Memory Usage: 2748 MB
+Memory Usage Before: 2777088 KB, Memory Usage After: 2813952 KB, Memory difference: 36864 KB
+
+
+===============================
+SIMULATING ON SIMULATED DATA 10^5
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000010000010000000000000010000101010000000000010000001000000000000000010000
+FALSE POSITIVES: 9%
+k = 10, Insertion Time: 28257 microseconds, Query Time: 57140 microseconds, False Look Up Time: 1817 microseconds, Delete Time: 28957 microseconds, Memory Usage: 3320 MB
+Memory Usage Before: 3198976 KB, Memory Usage After: 3399680 KB, Memory difference: 200704 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 16623 microseconds, Query Time: 44461 microseconds, False Look Up Time: 571 microseconds, Delete Time: 37652 microseconds, Memory Usage: 3260 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3338240 KB, Memory difference: 176128 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 19285 microseconds, Query Time: 61276 microseconds, False Look Up Time: 878 microseconds, Delete Time: 31848 microseconds, Memory Usage: 3260 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3338240 KB, Memory difference: 176128 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 18104 microseconds, Query Time: 28706 microseconds, False Look Up Time: 474 microseconds, Delete Time: 22164 microseconds, Memory Usage: 3252 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3330048 KB, Memory difference: 167936 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 19293 microseconds, Query Time: 63837 microseconds, False Look Up Time: 960 microseconds, Delete Time: 32734 microseconds, Memory Usage: 3256 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3334144 KB, Memory difference: 172032 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 19954 microseconds, Query Time: 61581 microseconds, False Look Up Time: 859 microseconds, Delete Time: 30981 microseconds, Memory Usage: 3260 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3338240 KB, Memory difference: 176128 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000001100000000001000001000000000000000000000000010000000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 7439 microseconds, Query Time: 32901 microseconds, False Look Up Time: 2489 microseconds, Delete Time: 21885 microseconds, Memory Usage: 3180 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3256320 KB, Memory difference: 94208 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000100000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 10509 microseconds, Query Time: 36231 microseconds, False Look Up Time: 1440 microseconds, Delete Time: 24284 microseconds, Memory Usage: 3184 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3260416 KB, Memory difference: 98304 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 10317 microseconds, Query Time: 30075 microseconds, False Look Up Time: 1320 microseconds, Delete Time: 22487 microseconds, Memory Usage: 3180 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3256320 KB, Memory difference: 94208 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000100000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 11442 microseconds, Query Time: 32969 microseconds, False Look Up Time: 1337 microseconds, Delete Time: 23557 microseconds, Memory Usage: 3188 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3264512 KB, Memory difference: 102400 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 11441 microseconds, Query Time: 35815 microseconds, False Look Up Time: 1351 microseconds, Delete Time: 21911 microseconds, Memory Usage: 3188 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3264512 KB, Memory difference: 102400 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000100000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 10695 microseconds, Query Time: 34213 microseconds, False Look Up Time: 1466 microseconds, Delete Time: 24003 microseconds, Memory Usage: 3184 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3260416 KB, Memory difference: 98304 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 4483 microseconds, Query Time: 12224 microseconds, False Look Up Time: 3520 microseconds, Delete Time: 14157 microseconds, Memory Usage: 3148 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3223552 KB, Memory difference: 61440 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 6574 microseconds, Query Time: 18099 microseconds, False Look Up Time: 2636 microseconds, Delete Time: 14322 microseconds, Memory Usage: 3192 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3268608 KB, Memory difference: 106496 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 5893 microseconds, Query Time: 15419 microseconds, False Look Up Time: 2419 microseconds, Delete Time: 14023 microseconds, Memory Usage: 3176 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3252224 KB, Memory difference: 90112 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 6062 microseconds, Query Time: 19548 microseconds, False Look Up Time: 2357 microseconds, Delete Time: 14147 microseconds, Memory Usage: 3200 MB
+Memory Usage Before: 3198976 KB, Memory Usage After: 3276800 KB, Memory difference: 77824 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 5980 microseconds, Query Time: 15120 microseconds, False Look Up Time: 2162 microseconds, Delete Time: 13351 microseconds, Memory Usage: 3188 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3264512 KB, Memory difference: 102400 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 6295 microseconds, Query Time: 16009 microseconds, False Look Up Time: 2130 microseconds, Delete Time: 14424 microseconds, Memory Usage: 3188 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3264512 KB, Memory difference: 102400 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 2874 microseconds, Query Time: 10584 microseconds, False Look Up Time: 4527 microseconds, Delete Time: 7653 microseconds, Memory Usage: 3176 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3252224 KB, Memory difference: 90112 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 2844 microseconds, Query Time: 8159 microseconds, False Look Up Time: 3998 microseconds, Delete Time: 9251 microseconds, Memory Usage: 3148 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3223552 KB, Memory difference: 61440 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 3459 microseconds, Query Time: 10999 microseconds, False Look Up Time: 4342 microseconds, Delete Time: 9349 microseconds, Memory Usage: 3140 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3215360 KB, Memory difference: 53248 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 3730 microseconds, Query Time: 3503 microseconds, False Look Up Time: 1267 microseconds, Delete Time: 3075 microseconds, Memory Usage: 3136 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3211264 KB, Memory difference: 49152 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1839 microseconds, Query Time: 7720 microseconds, False Look Up Time: 3272 microseconds, Delete Time: 7570 microseconds, Memory Usage: 3148 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3223552 KB, Memory difference: 61440 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 3377 microseconds, Query Time: 10701 microseconds, False Look Up Time: 3241 microseconds, Delete Time: 7614 microseconds, Memory Usage: 3156 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3231744 KB, Memory difference: 69632 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 1773 microseconds, Query Time: 3960 microseconds, False Look Up Time: 5876 microseconds, Delete Time: 3746 microseconds, Memory Usage: 3168 MB
+Memory Usage Before: 3198976 KB, Memory Usage After: 3244032 KB, Memory difference: 45056 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 2109 microseconds, Query Time: 4839 microseconds, False Look Up Time: 4900 microseconds, Delete Time: 3642 microseconds, Memory Usage: 3152 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3227648 KB, Memory difference: 65536 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 1831 microseconds, Query Time: 3997 microseconds, False Look Up Time: 4895 microseconds, Delete Time: 4408 microseconds, Memory Usage: 3152 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3227648 KB, Memory difference: 65536 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 1472 microseconds, Query Time: 3935 microseconds, False Look Up Time: 4971 microseconds, Delete Time: 4914 microseconds, Memory Usage: 3180 MB
+Memory Usage Before: 3215360 KB, Memory Usage After: 3256320 KB, Memory difference: 40960 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 2072 microseconds, Query Time: 1874 microseconds, False Look Up Time: 2066 microseconds, Delete Time: 1658 microseconds, Memory Usage: 3136 MB
+Memory Usage Before: 3182592 KB, Memory Usage After: 3211264 KB, Memory difference: 28672 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 976 microseconds, Query Time: 5211 microseconds, False Look Up Time: 5295 microseconds, Delete Time: 3639 microseconds, Memory Usage: 3152 MB
+Memory Usage Before: 3162112 KB, Memory Usage After: 3227648 KB, Memory difference: 65536 KB
+
+
+===============================
+SIMULATING ON SIMULATED DATA 10^6
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 1000000
+0111011101111101011111111111101111111011101011111100111110111111101111111110111101011111110101011111
+FALSE POSITIVES: 81%
+k = 10, Insertion Time: 269313 microseconds, Query Time: 318821 microseconds, False Look Up Time: 1351 microseconds, Delete Time: 313066 microseconds, Memory Usage: 7804 MB
+Memory Usage Before: 6356992 KB, Memory Usage After: 7991296 KB, Memory difference: 1634304 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000001101110101001100011001100110111000001010001100111100001000000001100100011000001001000101001011
+FALSE POSITIVES: 39%
+k = 10, Insertion Time: 248798 microseconds, Query Time: 398427 microseconds, False Look Up Time: 1299 microseconds, Delete Time: 342268 microseconds, Memory Usage: 7684 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 7868416 KB, Memory difference: 1527808 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000100100100001000100000000000000000000000000000110000010000100100100000000000001000000000001010
+FALSE POSITIVES: 14%
+k = 10, Insertion Time: 246298 microseconds, Query Time: 400689 microseconds, False Look Up Time: 613 microseconds, Delete Time: 346325 microseconds, Memory Usage: 7636 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 7819264 KB, Memory difference: 1441792 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 257476 microseconds, Query Time: 401575 microseconds, False Look Up Time: 590 microseconds, Delete Time: 343803 microseconds, Memory Usage: 7596 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 7778304 KB, Memory difference: 1437696 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000100000000000000000000000000000000000000000000000000000000000000001000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 276263 microseconds, Query Time: 393075 microseconds, False Look Up Time: 572 microseconds, Delete Time: 342404 microseconds, Memory Usage: 7596 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 7778304 KB, Memory difference: 1437696 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 287484 microseconds, Query Time: 395684 microseconds, False Look Up Time: 587 microseconds, Delete Time: 339728 microseconds, Memory Usage: 7628 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 7811072 KB, Memory difference: 1433600 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 1000000
+1011001110111100011110010100011111011111111101110010101010101111111000010110101010110011101111001110
+FALSE POSITIVES: 63%
+k = 20, Insertion Time: 124918 microseconds, Query Time: 202819 microseconds, False Look Up Time: 1432 microseconds, Delete Time: 155210 microseconds, Memory Usage: 7008 MB
+Memory Usage Before: 6361088 KB, Memory Usage After: 7176192 KB, Memory difference: 815104 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 1000000
+0010000000001000010000000000010001000000100101000000000000001001010000000110000000110010001101000000
+FALSE POSITIVES: 19%
+k = 20, Insertion Time: 112748 microseconds, Query Time: 218108 microseconds, False Look Up Time: 608 microseconds, Delete Time: 160870 microseconds, Memory Usage: 6976 MB
+Memory Usage Before: 6393856 KB, Memory Usage After: 7143424 KB, Memory difference: 749568 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 1000000
+0010000000000000010000000000000000000000000001000000000000101010000000000000000000000000000000000000
+FALSE POSITIVES: 6%
+k = 20, Insertion Time: 113445 microseconds, Query Time: 217117 microseconds, False Look Up Time: 680 microseconds, Delete Time: 160720 microseconds, Memory Usage: 6924 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 7090176 KB, Memory difference: 712704 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 1000000
+0011000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 20, Insertion Time: 120325 microseconds, Query Time: 218180 microseconds, False Look Up Time: 603 microseconds, Delete Time: 166741 microseconds, Memory Usage: 6948 MB
+Memory Usage Before: 6393856 KB, Memory Usage After: 7114752 KB, Memory difference: 720896 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 129068 microseconds, Query Time: 210114 microseconds, False Look Up Time: 575 microseconds, Delete Time: 158314 microseconds, Memory Usage: 6948 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 7114752 KB, Memory difference: 737280 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000100000100
+FALSE POSITIVES: 3%
+k = 20, Insertion Time: 133712 microseconds, Query Time: 209599 microseconds, False Look Up Time: 638 microseconds, Delete Time: 160048 microseconds, Memory Usage: 6908 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 7073792 KB, Memory difference: 733184 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 1000000
+0111010100000000010000000000000000100010111000000100010001011000001101001110000000001010101100100110
+FALSE POSITIVES: 30%
+k = 50, Insertion Time: 50007 microseconds, Query Time: 132206 microseconds, False Look Up Time: 1127 microseconds, Delete Time: 75234 microseconds, Memory Usage: 6544 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6701056 KB, Memory difference: 360448 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 1000000
+0001010100000000000000000000000000000010000000000100010001001000001000001100000000001000000100100000
+FALSE POSITIVES: 14%
+k = 50, Insertion Time: 50910 microseconds, Query Time: 93811 microseconds, False Look Up Time: 845 microseconds, Delete Time: 81960 microseconds, Memory Usage: 6528 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6684672 KB, Memory difference: 344064 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 1000000
+0001010000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000
+FALSE POSITIVES: 4%
+k = 50, Insertion Time: 51259 microseconds, Query Time: 135268 microseconds, False Look Up Time: 831 microseconds, Delete Time: 80087 microseconds, Memory Usage: 6564 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6721536 KB, Memory difference: 344064 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000001000000000000000010000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 50, Insertion Time: 54415 microseconds, Query Time: 135697 microseconds, False Look Up Time: 842 microseconds, Delete Time: 79805 microseconds, Memory Usage: 6540 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6696960 KB, Memory difference: 356352 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 1000000
+0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000
+FALSE POSITIVES: 2%
+k = 50, Insertion Time: 57081 microseconds, Query Time: 134903 microseconds, False Look Up Time: 855 microseconds, Delete Time: 79569 microseconds, Memory Usage: 6620 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6778880 KB, Memory difference: 401408 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 1000000
+0100000000000000000000000000000000000000000000000100000000000000001001000000000000000000000100100000
+FALSE POSITIVES: 6%
+k = 50, Insertion Time: 59450 microseconds, Query Time: 136728 microseconds, False Look Up Time: 776 microseconds, Delete Time: 79484 microseconds, Memory Usage: 6572 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6729728 KB, Memory difference: 389120 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 1000000
+0000000000000000010000100000000000100000000000110000001000000100001000000001000000010100000000000000
+FALSE POSITIVES: 11%
+k = 100, Insertion Time: 27880 microseconds, Query Time: 102806 microseconds, False Look Up Time: 1717 microseconds, Delete Time: 46990 microseconds, Memory Usage: 6460 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6615040 KB, Memory difference: 237568 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000001000000000000000000001000000010000000000000000
+FALSE POSITIVES: 3%
+k = 100, Insertion Time: 28480 microseconds, Query Time: 98359 microseconds, False Look Up Time: 1392 microseconds, Delete Time: 51234 microseconds, Memory Usage: 6460 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6615040 KB, Memory difference: 237568 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000010000000000000000
+FALSE POSITIVES: 2%
+k = 100, Insertion Time: 28165 microseconds, Query Time: 100690 microseconds, False Look Up Time: 1246 microseconds, Delete Time: 50194 microseconds, Memory Usage: 6416 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6569984 KB, Memory difference: 229376 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 29107 microseconds, Query Time: 106418 microseconds, False Look Up Time: 1213 microseconds, Delete Time: 49479 microseconds, Memory Usage: 6452 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6606848 KB, Memory difference: 229376 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 30698 microseconds, Query Time: 100263 microseconds, False Look Up Time: 1266 microseconds, Delete Time: 49576 microseconds, Memory Usage: 6408 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6561792 KB, Memory difference: 221184 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 31661 microseconds, Query Time: 100129 microseconds, False Look Up Time: 1244 microseconds, Delete Time: 49986 microseconds, Memory Usage: 6456 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6610944 KB, Memory difference: 233472 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 1000000
+0000010000100000000000000000000000000000000000000100000100000000000000000000000010000000000000000110
+FALSE POSITIVES: 7%
+k = 200, Insertion Time: 16191 microseconds, Query Time: 77397 microseconds, False Look Up Time: 3683 microseconds, Delete Time: 32670 microseconds, Memory Usage: 6356 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6508544 KB, Memory difference: 167936 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000010000000000000000000000000000000000000000000000000100000000000000000000000010000000000000000000
+FALSE POSITIVES: 3%
+k = 200, Insertion Time: 15544 microseconds, Query Time: 74925 microseconds, False Look Up Time: 2428 microseconds, Delete Time: 33309 microseconds, Memory Usage: 6348 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6500352 KB, Memory difference: 159744 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 15730 microseconds, Query Time: 80576 microseconds, False Look Up Time: 2452 microseconds, Delete Time: 34314 microseconds, Memory Usage: 6332 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6483968 KB, Memory difference: 143360 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000100
+FALSE POSITIVES: 2%
+k = 200, Insertion Time: 16200 microseconds, Query Time: 81694 microseconds, False Look Up Time: 2508 microseconds, Delete Time: 34167 microseconds, Memory Usage: 6344 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6496256 KB, Memory difference: 118784 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 16127 microseconds, Query Time: 78954 microseconds, False Look Up Time: 2386 microseconds, Delete Time: 34044 microseconds, Memory Usage: 6388 MB
+Memory Usage Before: 6377472 KB, Memory Usage After: 6541312 KB, Memory difference: 163840 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 16803 microseconds, Query Time: 79946 microseconds, False Look Up Time: 2368 microseconds, Delete Time: 33515 microseconds, Memory Usage: 6352 MB
+Memory Usage Before: 6340608 KB, Memory Usage After: 6504448 KB, Memory difference: 163840 KB
+
+
+===============================
+SIMULATING ON SIMULATED DATA 10^7
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 10000000
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 100%
+k = 10, Insertion Time: 3963594 microseconds, Query Time: 3623313 microseconds, False Look Up Time: 1365 microseconds, Delete Time: 3589332 microseconds, Memory Usage: 48308 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 49467392 KB, Memory difference: 14073856 KB
+
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 10000000
+0111111111011110111111111110111110111011111111111110111101111010111111111110111111011111001111111111
+FALSE POSITIVES: 86%
+k = 10, Insertion Time: 3784904 microseconds, Query Time: 4298492 microseconds, False Look Up Time: 1389 microseconds, Delete Time: 4220060 microseconds, Memory Usage: 48808 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 49979392 KB, Memory difference: 14585856 KB
+
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 10000000
+0110010111010010000010010001010000010001001000011010000101110010001000101100000000000100100011011001
+FALSE POSITIVES: 34%
+k = 10, Insertion Time: 3777380 microseconds, Query Time: 4627767 microseconds, False Look Up Time: 723 microseconds, Delete Time: 4561945 microseconds, Memory Usage: 49256 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 50438144 KB, Memory difference: 15044608 KB
+
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000010010000000000000000000010000000001000000101000000000100000000000000000000000000100000011000000
+FALSE POSITIVES: 10%
+k = 10, Insertion Time: 3969994 microseconds, Query Time: 4733396 microseconds, False Look Up Time: 1549 microseconds, Delete Time: 4635345 microseconds, Memory Usage: 49392 MB
+Memory Usage Before: 35409920 KB, Memory Usage After: 50577408 KB, Memory difference: 15167488 KB
+
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000010000000000000000000010000000001000000000000000001000000000000000000000000000110000000000100
+FALSE POSITIVES: 7%
+k = 10, Insertion Time: 4168665 microseconds, Query Time: 4712117 microseconds, False Look Up Time: 1453 microseconds, Delete Time: 4655033 microseconds, Memory Usage: 49400 MB
+Memory Usage Before: 35409920 KB, Memory Usage After: 50585600 KB, Memory difference: 15175680 KB
+
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000000001000000000000000000000000000110000000000000
+FALSE POSITIVES: 3%
+k = 10, Insertion Time: 4432666 microseconds, Query Time: 4754410 microseconds, False Look Up Time: 1069 microseconds, Delete Time: 4692641 microseconds, Memory Usage: 49380 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 50565120 KB, Memory difference: 15192064 KB
+
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 10000000
+1111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111
+FALSE POSITIVES: 99%
+k = 20, Insertion Time: 1661703 microseconds, Query Time: 1893156 microseconds, False Look Up Time: 1435 microseconds, Delete Time: 1844739 microseconds, Memory Usage: 41824 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 42827776 KB, Memory difference: 7434240 KB
+
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 10000000
+1111110111111101111111011011111111010011111011100000111111110110110011101111111111101111101111111111
+FALSE POSITIVES: 80%
+k = 20, Insertion Time: 1719810 microseconds, Query Time: 2218491 microseconds, False Look Up Time: 666 microseconds, Delete Time: 2181788 microseconds, Memory Usage: 42020 MB
+Memory Usage Before: 35426304 KB, Memory Usage After: 43028480 KB, Memory difference: 7602176 KB
+
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 10000000
+0001010110001001110001001000110000000001010001000100000000110000110011001001010110100101000100101010
+FALSE POSITIVES: 34%
+k = 20, Insertion Time: 1746223 microseconds, Query Time: 2377896 microseconds, False Look Up Time: 731 microseconds, Delete Time: 2317933 microseconds, Memory Usage: 42256 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 43270144 KB, Memory difference: 7897088 KB
+
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000010000000000000000000100000000000000000000000000000000000110011001000010010100100000100000000
+FALSE POSITIVES: 12%
+k = 20, Insertion Time: 1824985 microseconds, Query Time: 2396665 microseconds, False Look Up Time: 747 microseconds, Delete Time: 2347048 microseconds, Memory Usage: 42252 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 43266048 KB, Memory difference: 7872512 KB
+
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000100000000000000001000000001000000000000000000000000000000000000000000000100000001001100000000
+FALSE POSITIVES: 7%
+k = 20, Insertion Time: 1934053 microseconds, Query Time: 2392644 microseconds, False Look Up Time: 744 microseconds, Delete Time: 2346662 microseconds, Memory Usage: 42256 MB
+Memory Usage Before: 35409920 KB, Memory Usage After: 43270144 KB, Memory difference: 7860224 KB
+
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000001000000000000000000000000000000000000000000000100000000001000000000
+FALSE POSITIVES: 3%
+k = 20, Insertion Time: 2040920 microseconds, Query Time: 2361111 microseconds, False Look Up Time: 756 microseconds, Delete Time: 2341085 microseconds, Memory Usage: 42276 MB
+Memory Usage Before: 35409920 KB, Memory Usage After: 43290624 KB, Memory difference: 7880704 KB
+
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 10000000
+1101111111111111111111111111111111111111111111111111111111111110111111110111111111101111111111101111
+FALSE POSITIVES: 95%
+k = 50, Insertion Time: 775092 microseconds, Query Time: 1084588 microseconds, False Look Up Time: 1687 microseconds, Delete Time: 1034590 microseconds, Memory Usage: 37752 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 38658048 KB, Memory difference: 3264512 KB
+
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 10000000
+0000000110011000101101110101111000111001111111110111111110110000100011100111011100100000110110001011
+FALSE POSITIVES: 55%
+k = 50, Insertion Time: 715218 microseconds, Query Time: 1236174 microseconds, False Look Up Time: 980 microseconds, Delete Time: 1185242 microseconds, Memory Usage: 37520 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 38420480 KB, Memory difference: 3047424 KB
+
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 10000000
+0000000010011000000000100100010000011000000101000010101010000000000000000110011000000100000100001011
+FALSE POSITIVES: 23%
+k = 50, Insertion Time: 721929 microseconds, Query Time: 1264493 microseconds, False Look Up Time: 999 microseconds, Delete Time: 1209057 microseconds, Memory Usage: 37372 MB
+Memory Usage Before: 35389440 KB, Memory Usage After: 38268928 KB, Memory difference: 2879488 KB
+
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000010100000000000000000000100010100000000000000000000001011000000000000000000001
+FALSE POSITIVES: 9%
+k = 50, Insertion Time: 744979 microseconds, Query Time: 1262453 microseconds, False Look Up Time: 1010 microseconds, Delete Time: 1209385 microseconds, Memory Usage: 37308 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 38203392 KB, Memory difference: 2830336 KB
+
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000001
+FALSE POSITIVES: 2%
+k = 50, Insertion Time: 768296 microseconds, Query Time: 1264897 microseconds, False Look Up Time: 1037 microseconds, Delete Time: 1215603 microseconds, Memory Usage: 37368 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 38264832 KB, Memory difference: 2871296 KB
+
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000001000010000000000000000001101000000000000000000000
+FALSE POSITIVES: 5%
+k = 50, Insertion Time: 804342 microseconds, Query Time: 1264946 microseconds, False Look Up Time: 993 microseconds, Delete Time: 1204479 microseconds, Memory Usage: 37320 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 38215680 KB, Memory difference: 2842624 KB
+
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 10000000
+1101111010110111111101011111111010001111010111111111111110010111110111111110111011111011101110110110
+FALSE POSITIVES: 77%
+k = 100, Insertion Time: 448446 microseconds, Query Time: 768378 microseconds, False Look Up Time: 2196 microseconds, Delete Time: 715262 microseconds, Memory Usage: 36208 MB
+Memory Usage Before: 35377152 KB, Memory Usage After: 37076992 KB, Memory difference: 1699840 KB
+
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 10000000
+1001100000000000010000010000000000000010010101001000100010010001010011000000010011001000001000100010
+FALSE POSITIVES: 24%
+k = 100, Insertion Time: 424587 microseconds, Query Time: 836821 microseconds, False Look Up Time: 1467 microseconds, Delete Time: 792314 microseconds, Memory Usage: 36076 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 36941824 KB, Memory difference: 1548288 KB
+
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 10000000
+1000000000000000000000001000000000000010000000000000000000000000000010100000000001000000000000000000
+FALSE POSITIVES: 6%
+k = 100, Insertion Time: 421763 microseconds, Query Time: 825851 microseconds, False Look Up Time: 1490 microseconds, Delete Time: 798016 microseconds, Memory Usage: 36004 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 36868096 KB, Memory difference: 1495040 KB
+
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 429511 microseconds, Query Time: 844857 microseconds, False Look Up Time: 1516 microseconds, Delete Time: 791442 microseconds, Memory Usage: 36012 MB
+Memory Usage Before: 35389440 KB, Memory Usage After: 36876288 KB, Memory difference: 1486848 KB
+
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 449379 microseconds, Query Time: 841023 microseconds, False Look Up Time: 1456 microseconds, Delete Time: 786097 microseconds, Memory Usage: 36008 MB
+Memory Usage Before: 35377152 KB, Memory Usage After: 36872192 KB, Memory difference: 1495040 KB
+
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 466299 microseconds, Query Time: 847101 microseconds, False Look Up Time: 1524 microseconds, Delete Time: 826865 microseconds, Memory Usage: 36004 MB
+Memory Usage Before: 35393536 KB, Memory Usage After: 36868096 KB, Memory difference: 1474560 KB
+
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 10000000
+1000101000011110010100010110110011000001101001101011110000000100111111011111000010010101111110011111
+FALSE POSITIVES: 52%
+k = 200, Insertion Time: 266696 microseconds, Query Time: 540040 microseconds, False Look Up Time: 3161 microseconds, Delete Time: 481108 microseconds, Memory Usage: 35428 MB
+Memory Usage Before: 35426304 KB, Memory Usage After: 36278272 KB, Memory difference: 851968 KB
+
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 10000000
+0000100000001010000000000000110000000000000000101000100000000000000010011100000000000001101010001000
+FALSE POSITIVES: 17%
+k = 200, Insertion Time: 250592 microseconds, Query Time: 537939 microseconds, False Look Up Time: 2226 microseconds, Delete Time: 522495 microseconds, Memory Usage: 35332 MB
+Memory Usage Before: 35356672 KB, Memory Usage After: 36179968 KB, Memory difference: 823296 KB
+
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 10000000
+0000000000001000000000000000000000000000000000101000000000000000000000000000000000000101000000000000
+FALSE POSITIVES: 5%
+k = 200, Insertion Time: 250351 microseconds, Query Time: 569645 microseconds, False Look Up Time: 2199 microseconds, Delete Time: 518101 microseconds, Memory Usage: 35308 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 36155392 KB, Memory difference: 782336 KB
+
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000001000100000000000000000000000000000000001000010001000
+FALSE POSITIVES: 5%
+k = 200, Insertion Time: 257861 microseconds, Query Time: 561563 microseconds, False Look Up Time: 2186 microseconds, Delete Time: 511504 microseconds, Memory Usage: 35332 MB
+Memory Usage Before: 35422208 KB, Memory Usage After: 36179968 KB, Memory difference: 757760 KB
+
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000000000000010000000000000001000000000000000000000000000000000000000000000000000000100000000000
+FALSE POSITIVES: 3%
+k = 200, Insertion Time: 260805 microseconds, Query Time: 575361 microseconds, False Look Up Time: 2202 microseconds, Delete Time: 513807 microseconds, Memory Usage: 35304 MB
+Memory Usage Before: 35373056 KB, Memory Usage After: 36151296 KB, Memory difference: 778240 KB
+
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000010000000000000010000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 200, Insertion Time: 271045 microseconds, Query Time: 556461 microseconds, False Look Up Time: 2177 microseconds, Delete Time: 509164 microseconds, Memory Usage: 35276 MB
+Memory Usage Before: 35377152 KB, Memory Usage After: 36122624 KB, Memory difference: 745472 KB
+
+

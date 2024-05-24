@@ -10,12 +10,12 @@
 
 // g++ -std=c++11 test/testOnData.cpp -o testOnData
 
-#include "../cf/LCDF.h"
+#include "../cf/LDCF.h"
 
 typedef uint16_t fp_type;
-static const int bits_per_fp = 16;
+// static const int bits_per_fp = 25;
 
-void performTest(int k, const std::string &genome, const std::string &filepath)
+void performTest(int bits_per_fp, int k, const std::string &genome, const std::string &filepath)
 {
     struct rusage usageBefore, usageAfter;
     getrusage(RUSAGE_SELF, &usageBefore);
@@ -27,10 +27,14 @@ void performTest(int k, const std::string &genome, const std::string &filepath)
     std::cout << "GENOME LEN: " << genome.length() << "\n";
 
     auto startInsertion = std::chrono::high_resolution_clock::now();
+    int numOfAdded = 0;
     for (size_t i = 0; i < genome.length() / k; ++i)
     {
         std::string subsequence = genome.substr(i * k, k);
-        cf.insert(subsequence.c_str(), victim);
+        if (cf.insert(subsequence.c_str(), victim))
+        {
+            numOfAdded++;
+        }
     }
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
@@ -57,18 +61,34 @@ void performTest(int k, const std::string &genome, const std::string &filepath)
     while (std::getline(simulatedData, line))
     {
         int result = cf.lookup(line.c_str());
+        std::cout << result;
         if (result)
         {
             sum++;
         }
     }
+    std::cout << "\n";
     std::cout << "FALSE POSITIVES: " << sum << "%\n";
     simulatedData.close();
 
     auto endFalseLookUp = std::chrono::high_resolution_clock::now();
     auto falseLookUpTime = std::chrono::duration_cast<std::chrono::microseconds>(endFalseLookUp - startFalseLookUp).count();
 
-    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Memory Usage: " << memoryUsage << " MB" << std::endl;
+    auto startDelete = std::chrono::high_resolution_clock::now();
+    int numOfDeleted = 0;
+    for (size_t i = 0; i < genome.length() / k; ++i)
+    {
+        std::string subsequence = genome.substr(i * k, k);
+        int result = cf.lookup(subsequence.c_str());
+        if (result)
+        {
+            numOfDeleted++;
+        }
+    }
+    auto endDelete = std::chrono::high_resolution_clock::now();
+    auto deleteTime = std::chrono::duration_cast<std::chrono::microseconds>(endDelete - startDelete).count();
+
+    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Delete Time: " << deleteTime << " microseconds, Memory Usage: " << memoryUsage << " MB" << std::endl;
     std::cout << "Memory Usage Before: " << memoryUsageBefore << " KB, Memory Usage After: " << memoryUsageAfter << " KB, Memory difference: " << (memoryUsageAfter - memoryUsageBefore) << " KB\n\n\n";
 }
 
@@ -87,35 +107,12 @@ std::string readGenomeFromFile(const std::string &filename)
     return genome;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::string genome = readGenomeFromFile("data/e_coli_genome.fna");
+    std::string genome = readGenomeFromFile(argv[1]);
 
     srand(static_cast<unsigned>(time(NULL)));
 
-    std::cout << "\n\n\n===============================\n"
-              << "SIMULATING ON REAL E. COLI GENOME\n"
-              << "===============================\n";
-    for (int k : {10, 20, 50, 100, 200})
-    {
-        std::cout << "Starting... k = " << k << "\n";
-        performTest(k, genome, "data/new_kmers_sim_");
-    }
-
-    for (int i : {3, 4, 5, 6, 7})
-    {
-        std::string filename = "data/len_" + std::to_string(i) + "/sequence.fna";
-        std::string genome = readGenomeFromFile(filename);
-        std::string filepath = "data/len_" + std::to_string(i) + "/new_kmers_" + std::to_string(i) + "_";
-
-        std::cout << "===============================\n"
-                  << "SIMULATING ON RANDOMLY GENERATED GENOME 10^" << i << "\n"
-                  << "===============================\n";
-        for (int k : {10, 20, 50, 100, 200})
-        {
-            std::cout << "\n\nStarting... k = " << k << "\n";
-            performTest(k, genome, filepath);
-        }
-    }
-    return 0;
+    std::cout << "Starting... k = " << argv[3] << " bits per fingerprint = " << argv[4] << "\n";
+    performTest(std::stoi(argv[4]), std::stoi(argv[3]), genome, argv[2]);
 }
