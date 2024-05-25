@@ -7,6 +7,10 @@
 #include "../utils/hashFunctions.h"
 #include "bucket.h"
 
+/**
+ * CuckooFilter class is a data structure that stores fingerprints of keys and is used to check if a key is present in the filter.
+ * @tparam fp_size size of the fingerprint
+ */
 template<typename fp_size>
 class CuckooFilter {
 private:
@@ -24,42 +28,107 @@ public:
     CuckooFilter<fp_size> *next;
     CuckooFilter<fp_size> *prev;
 
+    /**
+     * Constructor for CuckooFilter.
+     * @param capacity number of rows in the cuckoo table
+     * @param bucket_size size of one bucket (row)
+     * @param maxNoOfMoves maximum number of kicks before giving up
+     * @param bits_per_fp size of the fingerprint
+     */
     CuckooFilter(int capacity, int bucket_size, int maxNoOfMoves, int bits_per_fp);
 
+    /**
+     * Destructor for CuckooFilter.
+     */
     ~CuckooFilter();
 
+    /**
+     * Inserts a key into the filter.
+     * @param key key to be inserted
+     * @param victim allocated space for the victim
+     * @return true if the key was inserted successfully, false otherwise
+     */
     bool insert(const char *key, Victim &victim);
 
+    /**
+     * Inserts a fingerprint into the filter.
+     * @param fp fingerprint to be inserted
+     * @param index index of the bucket where the fingerprint should be inserted
+     * @param victim allocated space for the victim
+     * @return true if the fingerprint was inserted successfully, false otherwise
+     */
     bool insertFP(fp_size fp, uint64_t index, Victim &victim);
 
+    /**
+     * Looks up a key in the filter.
+     * @param key key to be looked up
+     * @return true if the key is present in the filter, false otherwise
+     */
     bool lookup(const char *key);
 
+    /**
+     * Deletes a key from the filter.
+     * @param key key to be deleted
+     * @return true if the key was deleted successfully, false otherwise
+     */
     bool deleteKey(const char *key);
 
+    /**
+     * Prints the contents of the filter.
+     */
     void print();
 
+    /**
+     * Calculates the fingerprint of a key.
+     * @param key key for which the fingerprint is calculated
+     * @return fingerprint of the key
+     */
     uint32_t fingerprint(const char *key);
 
+    /**
+     * Checks if the filter is full.
+     * @return true if the filter is full, false otherwise
+     */
     bool isFull() {
         return ctr == capacity * bucket_size;
     }
 
+    /**
+     * Checks if the filter is empty.
+     * @return true if the filter is empty, false otherwise
+     */
     bool isEmpty() {
         return ctr == 0;
     }
 
+    /**
+     * Returns the number of buckets in the filter.
+     * @return number of buckets in the filter
+     */
     int getCapacity() {
         return capacity;
     }
 
+    /**
+     * Returns the size of one bucket in the filter.
+     * @return size of one bucket in the filter
+     */
     int getBucketSize() {
         return bucket_size;
     }
 
+    /**
+     * Returns the number of bits in the fingerprint.
+     * @return number of bits in the fingerprint
+     */
     int getBitsPerFp() {
         return bits_per_fp;
     }
 
+    /**
+     * Returns the maximum number of moves before giving up.
+     * @return maximum number of moves before giving up
+     */
     int getMaxNoOfMoves() {
         return maxNoOfMoves;
     }
@@ -127,7 +196,6 @@ bool CuckooFilter<fp_size>::insertFP(fp_size fp, uint64_t index, Victim &victim)
             return true;
         }
     }
-    // std::cout << "Victim: " << fp << " " << i << std::endl;  // debug
     victim.index = i;
     victim.fingerprint = fp;
     return false;
@@ -175,7 +243,6 @@ uint32_t CuckooFilter<fp_size>::fingerprint(const char *key) {
     if (fingerprint == 0) {
         fingerprint = 1;
     }
-    //std::cout << "Fingerprint: " << fingerprint << "for: " << key << std::endl;  // debug
     return fingerprint;
 }
 

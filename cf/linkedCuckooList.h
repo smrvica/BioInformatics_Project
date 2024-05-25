@@ -1,5 +1,9 @@
 #include "cuckooFilter.h"
 
+/**
+ * LinkedCuckooList class is a collection of CuckooFilters that are a linked list.
+ * @tparam fp_size size of the fingerprint
+ */
 template<typename fp_size>
 class LinkedCuckooList {
 public:
@@ -7,10 +11,24 @@ public:
     CuckooFilter<fp_size> *current;
     CuckooFilter<fp_size> *tail;
 
+    /**
+     * Constructor for LinkedCuckooList.
+     * @param singleTableCapacity capacity of the single table
+     * @param bucketSize size of one bucket
+     * @param maxNoOfMoves maximum number of moves
+     * @param bitsPerFp size of the fingerprint
+     */
     LinkedCuckooList(int singleTableCapacity, int bucketSize, int maxNoOfMoves, int bitsPerFp);
 
+    /**
+     * Destructor for LinkedCuckooList.
+     */
     ~LinkedCuckooList();
 
+    /**
+     * Method that returns a new CuckooFilter.
+     * @return new CuckooFilter
+     */
     CuckooFilter<fp_size> *getNewCF();
 
 };
