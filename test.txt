@@ -1,0 +1,1104 @@
+===============================
+SIMULATING ON E. COLI GENOME
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 4641652
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 100%
+k = 10, Insertion Time: 1763694 microseconds, Query Time: 1787459 microseconds, False Look Up Time: 774 microseconds, Delete Time: 1644906 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 4641652
+1111110001110111110011111111011111001011101111101111110111111010111011111110011111011100111111001101
+FALSE POSITIVES: 76%
+k = 10, Insertion Time: 1705949 microseconds, Query Time: 1879340 microseconds, False Look Up Time: 619 microseconds, Delete Time: 1890931 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 4641652
+0110100000110010010000100001011001000000000111101001000111001010110001111110010111010000001001000100
+FALSE POSITIVES: 39%
+k = 10, Insertion Time: 1623041 microseconds, Query Time: 2026781 microseconds, False Look Up Time: 653 microseconds, Delete Time: 1933632 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 4641652
+1100100000100111010000100001001001000000000011101000000101001000010001001000000111010000000001000000
+FALSE POSITIVES: 27%
+k = 10, Insertion Time: 1643518 microseconds, Query Time: 1987737 microseconds, False Look Up Time: 666 microseconds, Delete Time: 2023793 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 4641652
+1100000000100111000000100001001001000000000010101000000101001000010000011000000110000000001001000000
+FALSE POSITIVES: 23%
+k = 10, Insertion Time: 1697124 microseconds, Query Time: 2032181 microseconds, False Look Up Time: 867 microseconds, Delete Time: 2085051 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000011000000100001000001000001000011101000000001001000010001001000000010000000001001000000
+FALSE POSITIVES: 18%
+k = 10, Insertion Time: 1805418 microseconds, Query Time: 1947735 microseconds, False Look Up Time: 627 microseconds, Delete Time: 1939964 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 4641652
+1111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 99%
+k = 20, Insertion Time: 778841 microseconds, Query Time: 1013607 microseconds, False Look Up Time: 1368 microseconds, Delete Time: 857664 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 4641652
+0011100101000010010000101000011111111011110100110001000011110011011101111010110010000110111010100010
+FALSE POSITIVES: 50%
+k = 20, Insertion Time: 749911 microseconds, Query Time: 1173162 microseconds, False Look Up Time: 721 microseconds, Delete Time: 1025558 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 4641652
+1000100001000010000001011000011110000010000000010000000010010001010000011000000010000000001010000010
+FALSE POSITIVES: 23%
+k = 20, Insertion Time: 751558 microseconds, Query Time: 1007633 microseconds, False Look Up Time: 703 microseconds, Delete Time: 1005191 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000010000000000001000000010000000000000000000000000000000010000001000010000000000000010000010
+FALSE POSITIVES: 8%
+k = 20, Insertion Time: 856595 microseconds, Query Time: 1039202 microseconds, False Look Up Time: 729 microseconds, Delete Time: 1074051 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000010000000000000000000000000000010000100000000100000000000000000000000000000000000010000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 914154 microseconds, Query Time: 1102784 microseconds, False Look Up Time: 710 microseconds, Delete Time: 1019535 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000000000000000000100000000000000000000000000000000010000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 875467 microseconds, Query Time: 1010850 microseconds, False Look Up Time: 742 microseconds, Delete Time: 1016890 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 4641652
+0100101011101111110101111011111111001111101111111101111011111011101101111111111100011001111111111111
+FALSE POSITIVES: 78%
+k = 50, Insertion Time: 342588 microseconds, Query Time: 508823 microseconds, False Look Up Time: 1777 microseconds, Delete Time: 469121 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 4641652
+0100000000100100000001010011110100000101001000000101000011000000100100010000001100000000011011001010
+FALSE POSITIVES: 28%
+k = 50, Insertion Time: 310835 microseconds, Query Time: 545111 microseconds, False Look Up Time: 1138 microseconds, Delete Time: 641793 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000000000000000000000000001100000000000000000000101000001000000000000000000000100000000001000000000
+FALSE POSITIVES: 7%
+k = 50, Insertion Time: 311197 microseconds, Query Time: 536967 microseconds, False Look Up Time: 1005 microseconds, Delete Time: 546888 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000100000000000000000000000000000000000000000000001000000000100000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 50, Insertion Time: 387345 microseconds, Query Time: 558742 microseconds, False Look Up Time: 1033 microseconds, Delete Time: 589464 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000000000000100010000000000000000000000000000000000000000100000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 50, Insertion Time: 349734 microseconds, Query Time: 538340 microseconds, False Look Up Time: 967 microseconds, Delete Time: 523759 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000001000000000000000000010000000000000000000000000000000000000000000000000000000010000000010000000
+FALSE POSITIVES: 4%
+k = 50, Insertion Time: 375477 microseconds, Query Time: 528224 microseconds, False Look Up Time: 953 microseconds, Delete Time: 524475 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 4641652
+1011110110001110100000110101110011000010111010001001101101001000001100010011000010010111010011100000
+FALSE POSITIVES: 45%
+k = 100, Insertion Time: 190965 microseconds, Query Time: 323863 microseconds, False Look Up Time: 2070 microseconds, Delete Time: 315744 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 4641652
+0001100010000100100000000000010010000000011000000000100000000000001000010010000000000001000001000000
+FALSE POSITIVES: 15%
+k = 100, Insertion Time: 185116 microseconds, Query Time: 339448 microseconds, False Look Up Time: 1467 microseconds, Delete Time: 339376 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000100000000000000000000000000010000000001000000000000000000000000000000000000000010000000000000000
+FALSE POSITIVES: 4%
+k = 100, Insertion Time: 230838 microseconds, Query Time: 562637 microseconds, False Look Up Time: 1858 microseconds, Delete Time: 354911 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 188348 microseconds, Query Time: 334513 microseconds, False Look Up Time: 1424 microseconds, Delete Time: 333858 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000001000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 100, Insertion Time: 198677 microseconds, Query Time: 356830 microseconds, False Look Up Time: 1650 microseconds, Delete Time: 337598 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000001000000000000001000000000000000000000000010000000000000000
+FALSE POSITIVES: 3%
+k = 100, Insertion Time: 217398 microseconds, Query Time: 358034 microseconds, False Look Up Time: 1459 microseconds, Delete Time: 341567 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 4641652
+0000000010001000000000110111100001000000010011010000100101000000011001101000101100000010001101100111
+FALSE POSITIVES: 32%
+k = 200, Insertion Time: 112913 microseconds, Query Time: 220071 microseconds, False Look Up Time: 2558 microseconds, Delete Time: 212697 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 4641652
+0000000000001000000000000000000000000000010000000000100101000000010000100000000000000010000100000000
+FALSE POSITIVES: 9%
+k = 200, Insertion Time: 109065 microseconds, Query Time: 219221 microseconds, False Look Up Time: 2288 microseconds, Delete Time: 294116 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 176271 microseconds, Query Time: 234404 microseconds, False Look Up Time: 2059 microseconds, Delete Time: 221098 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 108773 microseconds, Query Time: 212612 microseconds, False Look Up Time: 2082 microseconds, Delete Time: 212165 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 4641652
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 126582 microseconds, Query Time: 217859 microseconds, False Look Up Time: 2159 microseconds, Delete Time: 217079 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 4641652
+0000000000000000000000010110000000000000000000000000000000000000001000000000000000000000000000000001
+FALSE POSITIVES: 5%
+k = 200, Insertion Time: 117112 microseconds, Query Time: 220414 microseconds, False Look Up Time: 2062 microseconds, Delete Time: 208785 microseconds
+
+===============================
+SIMULATING ON SIMULATED DATA 10^3
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 46 microseconds, Query Time: 37 microseconds, False Look Up Time: 329 microseconds, Delete Time: 38 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 44 microseconds, Query Time: 36 microseconds, False Look Up Time: 164 microseconds, Delete Time: 35 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 45 microseconds, Query Time: 38 microseconds, False Look Up Time: 167 microseconds, Delete Time: 36 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 46 microseconds, Query Time: 38 microseconds, False Look Up Time: 169 microseconds, Delete Time: 36 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 43 microseconds, Query Time: 36 microseconds, False Look Up Time: 165 microseconds, Delete Time: 36 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 43 microseconds, Query Time: 36 microseconds, False Look Up Time: 161 microseconds, Delete Time: 35 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 20 microseconds, Query Time: 18 microseconds, False Look Up Time: 381 microseconds, Delete Time: 19 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 21 microseconds, Query Time: 19 microseconds, False Look Up Time: 190 microseconds, Delete Time: 18 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 20 microseconds, Query Time: 18 microseconds, False Look Up Time: 186 microseconds, Delete Time: 18 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 21 microseconds, Query Time: 19 microseconds, False Look Up Time: 249 microseconds, Delete Time: 19 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 20 microseconds, Query Time: 18 microseconds, False Look Up Time: 190 microseconds, Delete Time: 18 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 20 microseconds, Query Time: 18 microseconds, False Look Up Time: 187 microseconds, Delete Time: 18 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 14 microseconds, Query Time: 12 microseconds, False Look Up Time: 583 microseconds, Delete Time: 12 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 15 microseconds, Query Time: 12 microseconds, False Look Up Time: 444 microseconds, Delete Time: 13 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 15 microseconds, Query Time: 12 microseconds, False Look Up Time: 404 microseconds, Delete Time: 13 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 15 microseconds, Query Time: 12 microseconds, False Look Up Time: 355 microseconds, Delete Time: 13 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 14 microseconds, Query Time: 12 microseconds, False Look Up Time: 333 microseconds, Delete Time: 12 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 14 microseconds, Query Time: 12 microseconds, False Look Up Time: 332 microseconds, Delete Time: 12 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 834 microseconds, Delete Time: 9 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 583 microseconds, Delete Time: 9 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 586 microseconds, Delete Time: 9 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 604 microseconds, Delete Time: 9 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 575 microseconds, Delete Time: 8 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 10 microseconds, Query Time: 8 microseconds, False Look Up Time: 584 microseconds, Delete Time: 8 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1454 microseconds, Delete Time: 6 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1042 microseconds, Delete Time: 5 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1069 microseconds, Delete Time: 5 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1054 microseconds, Delete Time: 5 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1067 microseconds, Delete Time: 6 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 1000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 7 microseconds, Query Time: 6 microseconds, False Look Up Time: 1095 microseconds, Delete Time: 6 microseconds
+
+===============================
+SIMULATING ON SIMULATED DATA 10^4
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 906 microseconds, Query Time: 935 microseconds, False Look Up Time: 435 microseconds, Delete Time: 914 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 975 microseconds, Query Time: 1013 microseconds, False Look Up Time: 250 microseconds, Delete Time: 993 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 1016 microseconds, Query Time: 1026 microseconds, False Look Up Time: 250 microseconds, Delete Time: 1021 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 1059 microseconds, Query Time: 1071 microseconds, False Look Up Time: 254 microseconds, Delete Time: 1043 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 1052 microseconds, Query Time: 1015 microseconds, False Look Up Time: 246 microseconds, Delete Time: 1005 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 950 microseconds, Query Time: 1004 microseconds, False Look Up Time: 235 microseconds, Delete Time: 988 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 381 microseconds, Query Time: 379 microseconds, False Look Up Time: 579 microseconds, Delete Time: 382 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 400 microseconds, Query Time: 385 microseconds, False Look Up Time: 275 microseconds, Delete Time: 385 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 394 microseconds, Query Time: 362 microseconds, False Look Up Time: 259 microseconds, Delete Time: 378 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 378 microseconds, Query Time: 370 microseconds, False Look Up Time: 258 microseconds, Delete Time: 365 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 374 microseconds, Query Time: 362 microseconds, False Look Up Time: 251 microseconds, Delete Time: 377 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 396 microseconds, Query Time: 369 microseconds, False Look Up Time: 249 microseconds, Delete Time: 395 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 172 microseconds, Query Time: 153 microseconds, False Look Up Time: 630 microseconds, Delete Time: 153 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 172 microseconds, Query Time: 149 microseconds, False Look Up Time: 411 microseconds, Delete Time: 151 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 164 microseconds, Query Time: 140 microseconds, False Look Up Time: 373 microseconds, Delete Time: 146 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 173 microseconds, Query Time: 143 microseconds, False Look Up Time: 372 microseconds, Delete Time: 144 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 173 microseconds, Query Time: 144 microseconds, False Look Up Time: 369 microseconds, Delete Time: 143 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 166 microseconds, Query Time: 140 microseconds, False Look Up Time: 378 microseconds, Delete Time: 139 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 87 microseconds, Query Time: 84 microseconds, False Look Up Time: 790 microseconds, Delete Time: 82 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 87 microseconds, Query Time: 85 microseconds, False Look Up Time: 597 microseconds, Delete Time: 83 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 88 microseconds, Query Time: 83 microseconds, False Look Up Time: 583 microseconds, Delete Time: 83 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 87 microseconds, Query Time: 83 microseconds, False Look Up Time: 577 microseconds, Delete Time: 83 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 86 microseconds, Query Time: 82 microseconds, False Look Up Time: 575 microseconds, Delete Time: 84 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 87 microseconds, Query Time: 83 microseconds, False Look Up Time: 582 microseconds, Delete Time: 83 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 60 microseconds, Query Time: 57 microseconds, False Look Up Time: 1169 microseconds, Delete Time: 59 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 60 microseconds, Query Time: 57 microseconds, False Look Up Time: 1062 microseconds, Delete Time: 56 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 60 microseconds, Query Time: 57 microseconds, False Look Up Time: 1076 microseconds, Delete Time: 59 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 64 microseconds, Query Time: 59 microseconds, False Look Up Time: 1057 microseconds, Delete Time: 57 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 60 microseconds, Query Time: 57 microseconds, False Look Up Time: 1050 microseconds, Delete Time: 56 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 10000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 60 microseconds, Query Time: 57 microseconds, False Look Up Time: 1053 microseconds, Delete Time: 56 microseconds
+
+===============================
+SIMULATING ON SIMULATED DATA 10^5
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000010000010000000000000010000101010000000000010000001000000000000000010000
+FALSE POSITIVES: 9%
+k = 10, Insertion Time: 17256 microseconds, Query Time: 20534 microseconds, False Look Up Time: 632 microseconds, Delete Time: 20639 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000010000000000000000000000000000010000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 17297 microseconds, Query Time: 23083 microseconds, False Look Up Time: 536 microseconds, Delete Time: 23488 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 18575 microseconds, Query Time: 22457 microseconds, False Look Up Time: 444 microseconds, Delete Time: 21919 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000100000000000000000000001000000000000000000000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 18372 microseconds, Query Time: 22122 microseconds, False Look Up Time: 426 microseconds, Delete Time: 22241 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000
+FALSE POSITIVES: 1%
+k = 10, Insertion Time: 19836 microseconds, Query Time: 21931 microseconds, False Look Up Time: 443 microseconds, Delete Time: 22565 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000
+FALSE POSITIVES: 2%
+k = 10, Insertion Time: 20389 microseconds, Query Time: 22338 microseconds, False Look Up Time: 449 microseconds, Delete Time: 23105 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000001100000000001000001000000000000000000000000010000000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 7448 microseconds, Query Time: 9839 microseconds, False Look Up Time: 724 microseconds, Delete Time: 9438 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 8852 microseconds, Query Time: 10763 microseconds, False Look Up Time: 514 microseconds, Delete Time: 10423 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 20, Insertion Time: 7814 microseconds, Query Time: 10145 microseconds, False Look Up Time: 452 microseconds, Delete Time: 10137 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 9544 microseconds, Query Time: 10483 microseconds, False Look Up Time: 454 microseconds, Delete Time: 10348 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 9254 microseconds, Query Time: 10778 microseconds, False Look Up Time: 470 microseconds, Delete Time: 10193 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000100000000001000000000000000000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 8423 microseconds, Query Time: 10264 microseconds, False Look Up Time: 450 microseconds, Delete Time: 9954 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 3184 microseconds, Query Time: 4089 microseconds, False Look Up Time: 868 microseconds, Delete Time: 4197 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 3351 microseconds, Query Time: 4448 microseconds, False Look Up Time: 624 microseconds, Delete Time: 4649 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 3422 microseconds, Query Time: 4531 microseconds, False Look Up Time: 612 microseconds, Delete Time: 4612 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 3701 microseconds, Query Time: 4393 microseconds, False Look Up Time: 616 microseconds, Delete Time: 4525 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 3547 microseconds, Query Time: 4739 microseconds, False Look Up Time: 695 microseconds, Delete Time: 4412 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 50, Insertion Time: 3468 microseconds, Query Time: 4631 microseconds, False Look Up Time: 662 microseconds, Delete Time: 4557 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1673 microseconds, Query Time: 2232 microseconds, False Look Up Time: 1365 microseconds, Delete Time: 2275 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1570 microseconds, Query Time: 2337 microseconds, False Look Up Time: 861 microseconds, Delete Time: 2278 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1691 microseconds, Query Time: 2449 microseconds, False Look Up Time: 886 microseconds, Delete Time: 2522 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1664 microseconds, Query Time: 2374 microseconds, False Look Up Time: 928 microseconds, Delete Time: 2397 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1688 microseconds, Query Time: 2373 microseconds, False Look Up Time: 947 microseconds, Delete Time: 2428 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 100, Insertion Time: 1600 microseconds, Query Time: 2346 microseconds, False Look Up Time: 1200 microseconds, Delete Time: 2350 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 857 microseconds, Query Time: 1176 microseconds, False Look Up Time: 1579 microseconds, Delete Time: 1185 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 938 microseconds, Query Time: 1181 microseconds, False Look Up Time: 1329 microseconds, Delete Time: 1132 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 889 microseconds, Query Time: 1117 microseconds, False Look Up Time: 1298 microseconds, Delete Time: 1126 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 1121 microseconds, Query Time: 1197 microseconds, False Look Up Time: 1377 microseconds, Delete Time: 1166 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 847 microseconds, Query Time: 1116 microseconds, False Look Up Time: 1290 microseconds, Delete Time: 1121 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 100000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 892 microseconds, Query Time: 1148 microseconds, False Look Up Time: 1316 microseconds, Delete Time: 1163 microseconds
+
+===============================
+SIMULATING ON SIMULATED DATA 10^6
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 1000000
+0111011101111101011111111111101111111011101011111100111110111111101111111110111101011111110101011111
+FALSE POSITIVES: 81%
+k = 10, Insertion Time: 293422 microseconds, Query Time: 344907 microseconds, False Look Up Time: 790 microseconds, Delete Time: 332149 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000001001110100001100111001100110111000001010000100011100001001000001000000011000001001000100001010
+FALSE POSITIVES: 33%
+k = 10, Insertion Time: 263200 microseconds, Query Time: 364490 microseconds, False Look Up Time: 617 microseconds, Delete Time: 504395 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000000110100001000100000000000001000000000000000010000010000000000100000000000000000000000000011
+FALSE POSITIVES: 11%
+k = 10, Insertion Time: 271017 microseconds, Query Time: 369072 microseconds, False Look Up Time: 661 microseconds, Delete Time: 376418 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000001000000000000000000000010010000000000000000000100000000000000000000000
+FALSE POSITIVES: 4%
+k = 10, Insertion Time: 273856 microseconds, Query Time: 358442 microseconds, False Look Up Time: 548 microseconds, Delete Time: 354251 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 293170 microseconds, Query Time: 358560 microseconds, False Look Up Time: 631 microseconds, Delete Time: 393100 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 10, Insertion Time: 315923 microseconds, Query Time: 371899 microseconds, False Look Up Time: 809 microseconds, Delete Time: 368969 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 1000000
+1011001110111100011110010100011111011111111101110010101010101111111000010110101010110011101111001110
+FALSE POSITIVES: 63%
+k = 20, Insertion Time: 134398 microseconds, Query Time: 161477 microseconds, False Look Up Time: 1365 microseconds, Delete Time: 164044 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 1000000
+1010000100001000010000000000010001000001100101010000000000101011010000000110000010110010001111000000
+FALSE POSITIVES: 27%
+k = 20, Insertion Time: 123831 microseconds, Query Time: 178673 microseconds, False Look Up Time: 637 microseconds, Delete Time: 177545 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 1000000
+0010000000000000010000000000000000000000000001000000000000001010000000000000000000000000000000000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 128878 microseconds, Query Time: 178253 microseconds, False Look Up Time: 701 microseconds, Delete Time: 176027 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 149318 microseconds, Query Time: 217044 microseconds, False Look Up Time: 611 microseconds, Delete Time: 175051 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 20, Insertion Time: 132311 microseconds, Query Time: 172244 microseconds, False Look Up Time: 617 microseconds, Delete Time: 172491 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000100000000000000000000000100000000000000000
+FALSE POSITIVES: 2%
+k = 20, Insertion Time: 147966 microseconds, Query Time: 172869 microseconds, False Look Up Time: 598 microseconds, Delete Time: 173137 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 1000000
+0111010100000000010000000000000000100010111000000100010001011000001101001110000000001010101100100110
+FALSE POSITIVES: 30%
+k = 50, Insertion Time: 54764 microseconds, Query Time: 80977 microseconds, False Look Up Time: 1606 microseconds, Delete Time: 80306 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 1000000
+0001000000000000000000000000000000000010010000000100010000011000001000001100000000001000000100100000
+FALSE POSITIVES: 13%
+k = 50, Insertion Time: 53144 microseconds, Query Time: 86307 microseconds, False Look Up Time: 874 microseconds, Delete Time: 85809 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 1000000
+0101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000
+FALSE POSITIVES: 4%
+k = 50, Insertion Time: 59997 microseconds, Query Time: 85384 microseconds, False Look Up Time: 847 microseconds, Delete Time: 83397 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 1000000
+0100000000000000000000000000000000000010101000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 4%
+k = 50, Insertion Time: 57258 microseconds, Query Time: 85656 microseconds, False Look Up Time: 844 microseconds, Delete Time: 93895 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 50, Insertion Time: 63911 microseconds, Query Time: 86763 microseconds, False Look Up Time: 886 microseconds, Delete Time: 84697 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000100000000000000001000000000000000000010000100100000
+FALSE POSITIVES: 5%
+k = 50, Insertion Time: 65875 microseconds, Query Time: 84208 microseconds, False Look Up Time: 863 microseconds, Delete Time: 83331 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 1000000
+0000000000000000010000100000000000100000000000110000001000000100001000000001000000010100000000000000
+FALSE POSITIVES: 11%
+k = 100, Insertion Time: 29381 microseconds, Query Time: 48731 microseconds, False Look Up Time: 2077 microseconds, Delete Time: 49130 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000001000000000000000000001000000010100000000000000
+FALSE POSITIVES: 4%
+k = 100, Insertion Time: 29394 microseconds, Query Time: 52147 microseconds, False Look Up Time: 1194 microseconds, Delete Time: 53820 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 29012 microseconds, Query Time: 51608 microseconds, False Look Up Time: 1187 microseconds, Delete Time: 52995 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 30431 microseconds, Query Time: 52385 microseconds, False Look Up Time: 1219 microseconds, Delete Time: 73435 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 35716 microseconds, Query Time: 59639 microseconds, False Look Up Time: 1233 microseconds, Delete Time: 65530 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 33721 microseconds, Query Time: 55043 microseconds, False Look Up Time: 1240 microseconds, Delete Time: 59893 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 1000000
+0000010000100000000000000000000000000000000000000100000100000000000000000000000010000000000000000110
+FALSE POSITIVES: 7%
+k = 200, Insertion Time: 17218 microseconds, Query Time: 30667 microseconds, False Look Up Time: 2259 microseconds, Delete Time: 30351 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 1000000
+0000010000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000
+FALSE POSITIVES: 2%
+k = 200, Insertion Time: 16674 microseconds, Query Time: 32509 microseconds, False Look Up Time: 1803 microseconds, Delete Time: 32171 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 17240 microseconds, Query Time: 32637 microseconds, False Look Up Time: 1742 microseconds, Delete Time: 32985 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 17847 microseconds, Query Time: 32795 microseconds, False Look Up Time: 1848 microseconds, Delete Time: 31771 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 1000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 0%
+k = 200, Insertion Time: 17431 microseconds, Query Time: 31685 microseconds, False Look Up Time: 1784 microseconds, Delete Time: 32376 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 1000000
+0000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 18034 microseconds, Query Time: 32187 microseconds, False Look Up Time: 1761 microseconds, Delete Time: 32347 microseconds
+
+===============================
+SIMULATING ON SIMULATED DATA 10^7
+===============================
+
+Starting... k = 10 bits per fingerprint = 16
+GENOME LEN: 10000000
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+FALSE POSITIVES: 100%
+k = 10, Insertion Time: 4589128 microseconds, Query Time: 3700633 microseconds, False Look Up Time: 1329 microseconds, Delete Time: 3721346 microseconds
+
+Starting... k = 10 bits per fingerprint = 18
+GENOME LEN: 10000000
+0111111111110010111011111111111111111011111111111101111101111010111011111110111110011101101111111111
+FALSE POSITIVES: 84%
+k = 10, Insertion Time: 3981343 microseconds, Query Time: 4306311 microseconds, False Look Up Time: 1409 microseconds, Delete Time: 4270752 microseconds
+
+Starting... k = 10 bits per fingerprint = 20
+GENOME LEN: 10000000
+0110010111010010000010010001010000000001100000111010000101110010001010001100000000000100100011111001
+FALSE POSITIVES: 35%
+k = 10, Insertion Time: 3865219 microseconds, Query Time: 4608083 microseconds, False Look Up Time: 911 microseconds, Delete Time: 4665833 microseconds
+
+Starting... k = 10 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000010010000000000100000000010000000001000000101000000000100000000000000000000000000100000011000000
+FALSE POSITIVES: 11%
+k = 10, Insertion Time: 4300601 microseconds, Query Time: 5446576 microseconds, False Look Up Time: 1147 microseconds, Delete Time: 5813641 microseconds
+
+Starting... k = 10 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000010000000000000000000010000000000000100000000000001000000000000000000000000000010000000000000
+FALSE POSITIVES: 5%
+k = 10, Insertion Time: 4339758 microseconds, Query Time: 4794016 microseconds, False Look Up Time: 847 microseconds, Delete Time: 4894871 microseconds
+
+Starting... k = 10 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000001000000001000000000000000100000000000100000000000000
+FALSE POSITIVES: 4%
+k = 10, Insertion Time: 4641676 microseconds, Query Time: 4795189 microseconds, False Look Up Time: 1577 microseconds, Delete Time: 4779107 microseconds
+
+Starting... k = 20 bits per fingerprint = 16
+GENOME LEN: 10000000
+1111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111
+FALSE POSITIVES: 99%
+k = 20, Insertion Time: 1779960 microseconds, Query Time: 1932379 microseconds, False Look Up Time: 1443 microseconds, Delete Time: 1924288 microseconds
+
+Starting... k = 20 bits per fingerprint = 18
+GENOME LEN: 10000000
+0111100111011111110111011111111011000011111011110100111111110010110011101111111111001111101111111111
+FALSE POSITIVES: 76%
+k = 20, Insertion Time: 1788675 microseconds, Query Time: 2430342 microseconds, False Look Up Time: 881 microseconds, Delete Time: 2441325 microseconds
+
+Starting... k = 20 bits per fingerprint = 20
+GENOME LEN: 10000000
+0001000110001001111000001000110000010001010001100000000000110000110011001001010110100101000100100010
+FALSE POSITIVES: 33%
+k = 20, Insertion Time: 2006615 microseconds, Query Time: 2498788 microseconds, False Look Up Time: 1517 microseconds, Delete Time: 2494117 microseconds
+
+Starting... k = 20 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000110000000000000000000100000000000000000000000000000000000010011000000000010000100000100000000
+FALSE POSITIVES: 9%
+k = 20, Insertion Time: 1890929 microseconds, Query Time: 2584699 microseconds, False Look Up Time: 1588 microseconds, Delete Time: 2432417 microseconds
+
+Starting... k = 20 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000100000000000000001000000000000000000000000000000000000000000001000000000100000001000000000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 2015345 microseconds, Query Time: 2437724 microseconds, False Look Up Time: 1522 microseconds, Delete Time: 2466265 microseconds
+
+Starting... k = 20 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000001000000000000000000000001000000000000000000000100000001001000000000
+FALSE POSITIVES: 5%
+k = 20, Insertion Time: 2122879 microseconds, Query Time: 2434153 microseconds, False Look Up Time: 770 microseconds, Delete Time: 2441409 microseconds
+
+Starting... k = 50 bits per fingerprint = 16
+GENOME LEN: 10000000
+1101111111111111111111111111111111111111111111111111111111111110111111110111111111101111111111101111
+FALSE POSITIVES: 95%
+k = 50, Insertion Time: 801499 microseconds, Query Time: 1068073 microseconds, False Look Up Time: 1714 microseconds, Delete Time: 1070530 microseconds
+
+Starting... k = 50 bits per fingerprint = 18
+GENOME LEN: 10000000
+0000000110001000100100110101101000111101100011110111111110110010100011000011011100100100110110001011
+FALSE POSITIVES: 49%
+k = 50, Insertion Time: 754333 microseconds, Query Time: 1218976 microseconds, False Look Up Time: 994 microseconds, Delete Time: 1218795 microseconds
+
+Starting... k = 50 bits per fingerprint = 20
+GENOME LEN: 10000000
+0000000000001000000000110100000000001000000001100011101010000000000000000010010000000100000110001011
+FALSE POSITIVES: 20%
+k = 50, Insertion Time: 741651 microseconds, Query Time: 1247527 microseconds, False Look Up Time: 1019 microseconds, Delete Time: 1244299 microseconds
+
+Starting... k = 50 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000010100000000000000000000100010100000000000000000000000011000000100000100000001
+FALSE POSITIVES: 10%
+k = 50, Insertion Time: 768698 microseconds, Query Time: 1246689 microseconds, False Look Up Time: 1036 microseconds, Delete Time: 1247837 microseconds
+
+Starting... k = 50 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000001
+FALSE POSITIVES: 3%
+k = 50, Insertion Time: 791743 microseconds, Query Time: 1259692 microseconds, False Look Up Time: 1037 microseconds, Delete Time: 1258845 microseconds
+
+Starting... k = 50 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000000001000100000000000001100000000000000000000000
+FALSE POSITIVES: 4%
+k = 50, Insertion Time: 831699 microseconds, Query Time: 1239187 microseconds, False Look Up Time: 1010 microseconds, Delete Time: 1243330 microseconds
+
+Starting... k = 100 bits per fingerprint = 16
+GENOME LEN: 10000000
+1101111010110111111101011111111010001111010111111111111110010111110111111110111011111011101110110110
+FALSE POSITIVES: 77%
+k = 100, Insertion Time: 463214 microseconds, Query Time: 734106 microseconds, False Look Up Time: 2206 microseconds, Delete Time: 732890 microseconds
+
+Starting... k = 100 bits per fingerprint = 18
+GENOME LEN: 10000000
+1100100000000000010000010000000000000010010101001000000010010001010011100000010011001000001010100010
+FALSE POSITIVES: 25%
+k = 100, Insertion Time: 434375 microseconds, Query Time: 810740 microseconds, False Look Up Time: 1536 microseconds, Delete Time: 809384 microseconds
+
+Starting... k = 100 bits per fingerprint = 20
+GENOME LEN: 10000000
+0000000000000000000000010000010000000010000000000000000000000000010010000000000000000000001000100000
+FALSE POSITIVES: 7%
+k = 100, Insertion Time: 433602 microseconds, Query Time: 813837 microseconds, False Look Up Time: 1521 microseconds, Delete Time: 814734 microseconds
+
+Starting... k = 100 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000010000000000000000000000000000000000000000000000001000000000000000000000000000
+FALSE POSITIVES: 2%
+k = 100, Insertion Time: 447038 microseconds, Query Time: 816914 microseconds, False Look Up Time: 1499 microseconds, Delete Time: 818523 microseconds
+
+Starting... k = 100 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 460260 microseconds, Query Time: 807040 microseconds, False Look Up Time: 1487 microseconds, Delete Time: 807249 microseconds
+
+Starting... k = 100 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 100, Insertion Time: 478695 microseconds, Query Time: 825136 microseconds, False Look Up Time: 1500 microseconds, Delete Time: 812734 microseconds
+
+Starting... k = 200 bits per fingerprint = 16
+GENOME LEN: 10000000
+1000101000011110010100010110110011000001101001101011110000000100111111011111000010010101111110011111
+FALSE POSITIVES: 52%
+k = 200, Insertion Time: 272157 microseconds, Query Time: 490968 microseconds, False Look Up Time: 3274 microseconds, Delete Time: 490246 microseconds
+
+Starting... k = 200 bits per fingerprint = 18
+GENOME LEN: 10000000
+0000100000000000000000000000110000000000000000101000100000000000000010011100000000000101100110001000
+FALSE POSITIVES: 16%
+k = 200, Insertion Time: 257387 microseconds, Query Time: 532875 microseconds, False Look Up Time: 2340 microseconds, Delete Time: 529554 microseconds
+
+Starting... k = 200 bits per fingerprint = 20
+GENOME LEN: 10000000
+0000000000001000000000000000000000000000000000001000000000000000000000000000000000000001000000000000
+FALSE POSITIVES: 3%
+k = 200, Insertion Time: 282496 microseconds, Query Time: 568891 microseconds, False Look Up Time: 2252 microseconds, Delete Time: 529666 microseconds
+
+Starting... k = 200 bits per fingerprint = 22
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000
+FALSE POSITIVES: 1%
+k = 200, Insertion Time: 265295 microseconds, Query Time: 531376 microseconds, False Look Up Time: 2241 microseconds, Delete Time: 530610 microseconds
+
+Starting... k = 200 bits per fingerprint = 24
+GENOME LEN: 10000000
+0000000000000000010000000000000000000000000000000000000000000000010000000000000000000000100010000000
+FALSE POSITIVES: 4%
+k = 200, Insertion Time: 269393 microseconds, Query Time: 520507 microseconds, False Look Up Time: 2200 microseconds, Delete Time: 519951 microseconds
+
+Starting... k = 200 bits per fingerprint = 26
+GENOME LEN: 10000000
+0000000000000000000000000000000000000000000000000000010000000000010010000000000000000000000000000000
+FALSE POSITIVES: 3%
+k = 200, Insertion Time: 278374 microseconds, Query Time: 520042 microseconds, False Look Up Time: 2151 microseconds, Delete Time: 519904 microseconds
+
