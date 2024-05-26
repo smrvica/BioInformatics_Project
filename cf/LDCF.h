@@ -4,8 +4,6 @@
  * @brief LDCF is a tree structure of CuckooFilters
  * When a fingerpring cannot be stored in a current CuckooFilter, then based on the fingerprint bits we store the fingerprint in the right or left branch of the binary tree.
  * @tparam fp_size
- *
- * author: Petra Habjanec
  */
 
 template <typename fp_size>

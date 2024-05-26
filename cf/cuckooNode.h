@@ -1,9 +1,7 @@
 #include "cuckooFilter.h"
 /**
  * CuckooNode is a class structure which stores a CuckooFilter, and it is used to store next left and right node, in a tree structure
- * @tparam fp_size size of the fingerprint 
- * 
- * author: Petra Habjanec 
+ * @tparam fp_size size of the fingerprint
  */
 template <typename fp_size>
 class CuckooNode
@@ -16,7 +14,7 @@ private:
 public:
     /**
      * @brief Construct a new Cuckoo Node object
-     * 
+     *
      * @param capacity number of rows in the cuckoo table
      * @param bucket_size size of one bucket (row)
      * @param maxNoOfMoves maximum number of kicks before giving up
@@ -35,13 +33,13 @@ public:
     }
 
     /**
-     * @brief Makes a new Left Cuckoo Filter Node 
-     * @return a new left Cuckoo Filter Node 
+     * @brief Makes a new Left Cuckoo Filter Node
+     * @return a new left Cuckoo Filter Node
      */
     CuckooNode<fp_size> *getNewLeftCF();
     /**
-     * @brief Makes a new Right Cuckoo Filter Node 
-     * @return a new right Cuckoo Filter Node 
+     * @brief Makes a new Right Cuckoo Filter Node
+     * @return a new right Cuckoo Filter Node
      */
     CuckooNode<fp_size> *getNewRightCF();
 
@@ -51,8 +49,8 @@ public:
     void print();
 
     /**
-     * @brief Get the current CuckooFilter 
-     * @return returns current CuckooFilter 
+     * @brief Get the current CuckooFilter
+     * @return returns current CuckooFilter
      */
     CuckooFilter<fp_size> *getCurr() { return curr; }
     /**
@@ -67,15 +65,15 @@ public:
     CuckooNode<fp_size> *getRight() { return right; }
 
     /**
-     * @brief Returns if the left node exists 
-     * @return true if there is a right node 
-     * @return false if there no right node 
+     * @brief Returns if the left node exists
+     * @return true if there is a right node
+     * @return false if there no right node
      */
     bool hasRight() { return right != nullptr; }
     /**
-     * @brief Returns if the left node exists 
-     * @return true if there is a left node 
-     * @return false if there no left node 
+     * @brief Returns if the left node exists
+     * @return true if there is a left node
+     * @return false if there no left node
      */
     bool hasLeft() { return left != nullptr; }
 };
@@ -103,15 +101,19 @@ CuckooNode<fp_size> *CuckooNode<fp_size>::getNewLeftCF()
 }
 
 template <typename fp_size>
-void CuckooNode<fp_size>::print() {
-    if (curr == nullptr) {
+void CuckooNode<fp_size>::print()
+{
+    if (curr == nullptr)
+    {
         return;
     }
     curr->print();
-    if (left != nullptr) {
+    if (left != nullptr)
+    {
         left->print();
     }
-    if (right != nullptr) {
+    if (right != nullptr)
+    {
         right->print();
     }
 }
