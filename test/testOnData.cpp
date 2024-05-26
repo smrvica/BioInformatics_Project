@@ -88,8 +88,8 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
     auto endDelete = std::chrono::high_resolution_clock::now();
     auto deleteTime = std::chrono::duration_cast<std::chrono::microseconds>(endDelete - startDelete).count();
 
-    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Delete Time: " << deleteTime << " microseconds, Memory Usage: " << memoryUsage << " MB" << std::endl;
-    std::cout << "Memory Usage Before: " << memoryUsageBefore << " KB, Memory Usage After: " << memoryUsageAfter << " KB, Memory difference: " << (memoryUsageAfter - memoryUsageBefore) << " KB\n\n\n";
+    std::cout << "k = " << k << ", Insertion Time: " << insertionTime << " microseconds, Query Time: " << queryTime << " microseconds, False Look Up Time: " << falseLookUpTime << " microseconds, Delete Time: " << deleteTime << " microseconds\n"
+              << std::endl;
 }
 
 std::string readGenomeFromFile(const std::string &filename)
