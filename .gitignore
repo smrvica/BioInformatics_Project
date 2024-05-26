@@ -1,19 +1,1 @@
 
-test1
-*.out
-src/uint.h
-src/linktree.h
-src/LDCF.h
-src/LDCF.cpp
-src/hashfunction.h
-src/hashfunction.cpp
-src/cuckoofilter.h
-src/cuckoofilter.cpp
-src/compactedLDCF.h
-src/compactedLDCF.cpp
-src/bithack.h
-.vscode/settings.json
-testOnData
-/originalImplementation
-test_output
-test_outputž
