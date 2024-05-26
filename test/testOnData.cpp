@@ -21,7 +21,7 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
     getrusage(RUSAGE_SELF, &usageBefore);
     long memoryUsageBefore = usageBefore.ru_maxrss;
 
-    LCDF<fp_type> cf(20, 10, 5, bits_per_fp);
+    LDCF<fp_type> cf(20, 10, 5, bits_per_fp);
     Victim victim;
 
     std::cout << "GENOME LEN: " << genome.length() << "\n";

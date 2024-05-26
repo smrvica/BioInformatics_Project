@@ -1,3 +1,5 @@
+g++ -std=c++11 test/testOnData.cpp -o testOnData
+
 numbers=(10 20 50 100 200)
 exponents=(3 4 5 6 7)
 bits=(16 18 20 22 24 26)
