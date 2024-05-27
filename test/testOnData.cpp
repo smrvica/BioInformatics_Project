@@ -39,15 +39,21 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
     auto endInsertion = std::chrono::high_resolution_clock::now();
     auto insertionTime = std::chrono::duration_cast<std::chrono::microseconds>(endInsertion - startInsertion).count();
 
+    int counter = 0;
     auto startQuery = std::chrono::high_resolution_clock::now();
     for (size_t i = 0; i < genome.length() / k; ++i)
     {
         std::string subsequence = genome.substr(i * k, k);
         int result = cf.lookup(subsequence.c_str());
+        if (result)
+        {
+            counter++;
+        }
     }
     auto endQuery = std::chrono::high_resolution_clock::now();
     auto queryTime = std::chrono::duration_cast<std::chrono::microseconds>(endQuery - startQuery).count();
 
+    std::cout << "Number of added: " << numOfAdded << " Number of correctly found: " << counter << "\n";
     getrusage(RUSAGE_SELF, &usageAfter);
     long memoryUsageAfter = usageAfter.ru_maxrss;
 
