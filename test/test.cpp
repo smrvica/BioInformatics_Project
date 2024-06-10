@@ -111,7 +111,7 @@ void test4() {
 void test5() {
     std::cout << "TEST 5\n";
 
-    LCDF<fp_type> cf = LCDF<fp_type>(5, 2, 6, bits_per_fp);
+    LDCF<fp_type> cf = LDCF<fp_type>(5, 2, 6, bits_per_fp);
     Victim victim;
 
     std::cout << "insert test: " << cf.insert("test", victim) << "\n";
@@ -144,7 +144,7 @@ void test5() {
 void test6() {
     std::cout << "TEST 6\n";
 
-    LCDF<fp_type> cf = LCDF<fp_type>(5, 2, 6, bits_per_fp);
+    LDCF<fp_type> cf = LDCF<fp_type>(5, 2, 6, bits_per_fp);
     Victim victim;
 
     for (int i = 0; i < 12; i++)
