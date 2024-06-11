@@ -12,7 +12,7 @@
 
 #include "../cf/LDCF.h"
 
-typedef uint16_t fp_type;
+typedef uint32_t fp_type;
 // static const int bits_per_fp = 25;
 
 void performTest(int bits_per_fp, int k, const std::string &genome, const std::string &filepath)
@@ -63,7 +63,8 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
     std::string filename = filepath + std::to_string(k) + ".txt";
     std::ifstream simulatedData(filename);
     std::string line;
-    int sum = 0;
+    float sum = 0;
+    float cnt = 0;
     while (std::getline(simulatedData, line))
     {
         int result = cf.lookup(line.c_str());
@@ -72,9 +73,10 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
         {
             sum++;
         }
+        cnt++;
     }
     std::cout << "\n";
-    std::cout << "FALSE POSITIVES: " << sum << "%\n";
+    std::cout << "FALSE POSITIVES: " << sum / cnt << "%\n";
     simulatedData.close();
 
     auto endFalseLookUp = std::chrono::high_resolution_clock::now();

@@ -2,7 +2,7 @@ g++ -std=c++11 test/testOnData.cpp -o testOnData
 
 numbers=(10 20 50 100 200)
 exponents=(3 4 5 6 7)
-bits=(8 16)
+bits=(8 16 32)
 
 echo "===============================" > test.txt
 echo "SIMULATING ON E. COLI GENOME" >> test.txt
