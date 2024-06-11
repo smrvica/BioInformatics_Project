@@ -19,7 +19,7 @@ private:
     Bucket<fp_size> *buckets;
     int maxNoOfMoves;
     int bits_per_fp;
-    uint32_t fp_mask;
+    uint64_t fp_mask;
 
     int ctr;
 
@@ -83,7 +83,7 @@ public:
      * @param key key for which the fingerprint is calculated
      * @return fingerprint of the key
      */
-    uint32_t fingerprint(const char *key);
+    uint64_t fingerprint(const char *key);
 
     /**
      * Checks if the filter is full.
@@ -149,7 +149,7 @@ CuckooFilter<fp_size>::CuckooFilter(int capacity, int bucket_size, int maxNoOfMo
     }
     this->maxNoOfMoves = maxNoOfMoves;
     this->bits_per_fp = bits_per_fp;
-    this->fp_mask = (1 << bits_per_fp) - 1;
+    this->fp_mask =  ~0ULL >> (64 - bits_per_fp);
     this->next = nullptr;
     this->prev = nullptr;
     this->ctr = 0;
@@ -237,9 +237,9 @@ void CuckooFilter<fp_size>::print() {
 }
 
 template<typename fp_size>
-uint32_t CuckooFilter<fp_size>::fingerprint(const char *key) {
-    uint32_t hashValue = hash(key);
-    uint32_t fingerprint = hashValue & fp_mask;
+uint64_t CuckooFilter<fp_size>::fingerprint(const char *key) {
+    uint64_t hashValue = hash(key);
+    uint64_t fingerprint = hashValue & fp_mask;
     if (fingerprint == 0) {
         fingerprint = 1;
     }
