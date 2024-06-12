@@ -76,7 +76,7 @@ void performTest(int bits_per_fp, int k, const std::string &genome, const std::s
         cnt++;
     }
     std::cout << "\n";
-    std::cout << "FALSE POSITIVES: " << sum / cnt << "%\n";
+    std::cout << "FALSE POSITIVES: " << sum / cnt * 100 << "%\n";
     simulatedData.close();
 
     auto endFalseLookUp = std::chrono::high_resolution_clock::now();
